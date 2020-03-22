@@ -76,6 +76,12 @@
     margin-top: 1.5em;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+
   h2,
   h1,
   p {
@@ -90,7 +96,7 @@
   }
 
   @media (max-width: 420px) {
-    div {
+    .cards {
       flex-direction: column;
     }
   }
@@ -118,10 +124,11 @@
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
       <Card>
-        <a rel="prefetch" href="blog/{post.slug}" slot="name">
+        <a rel="prefetch" href="blog/{post.slug}" slot="logo">
+          <img alt="corona logo" src="uploads/{post.thumbnail}" />
           <h2>{post.title}</h2>
+          <p>Közzétéve: {moment(post.date).format('ll')}</p>
         </a>
-        <p slot="number">Közzétéve: {moment(post.date).format('ll')}</p>
       </Card>
     {/each}
   </div>

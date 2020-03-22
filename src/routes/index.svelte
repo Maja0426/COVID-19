@@ -60,7 +60,7 @@
     visible = false;
   });
 
-  async function getData() {
+  onMount(async function getData() {
     try {
       const responseHun = await axios.get(covidHunUrl);
       const responseGlobal = await axios.get(covidGlobalUrl);
@@ -75,9 +75,7 @@
     } catch (error) {
       console.log(error);
     }
-  }
-
-  getData();
+  });
 </script>
 
 <style>
