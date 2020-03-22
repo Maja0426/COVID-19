@@ -36,6 +36,24 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content :global(p > img) {
+    margin: auto;
+    width: 100%;
+  }
+
   .content :global(h2) {
     font-size: 1.4em;
     font-weight: 500;

@@ -10,12 +10,35 @@
 
 <script>
   export let posts;
+  import moment from "moment";
+  import "moment/locale/hu";
+  import Card from "../../components/Card.svelte";
 </script>
 
 <style>
-  ul {
-    margin: 0 0 1em 0;
-    line-height: 1.5;
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2,
+  p {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 420px) {
+    div {
+      flex-direction: column;
+    }
   }
 </style>
 
@@ -26,15 +49,18 @@
 <h1>Recent posts</h1>
 
 <section>
-  <ul>
+  <div>
     {#each posts as post}
       <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-      <li>
-        <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
-      </li>
+      <Card>
+        <a rel="prefetch" href="blog/{post.slug}" slot="name">
+          <h2>{post.title}</h2>
+        </a>
+        <p slot="number">Közzétéve: {moment(post.date).format('ll')}</p>
+      </Card>
     {/each}
-  </ul>
+  </div>
 </section>
