@@ -3,7 +3,7 @@ layout: blog
 title: New Blog
 date: 2020-03-21T20:55:55.304Z
 name: Majoros Tamás
-thumbnail: /uploads/mockuper5.png
+thumbnail: /uploads/celebrating.jpg
 ---
 ![computer](/uploads/mockuper5.png "Computer")
 
