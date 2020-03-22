@@ -15,6 +15,8 @@
 <script>
   import fm from "front-matter";
   import MarkdownIt from "markdown-it";
+  import moment from "moment";
+  import "moment/locale/hu";
 
   export let postMd;
 
@@ -42,6 +44,17 @@
     margin-top: 1.5em;
   }
 
+  /* .date {
+    width: 100%;
+  } */
+
+  h5 {
+    width: inherit;
+    padding: 0.8em;
+    background: #000;
+    color: #fff;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -56,6 +69,22 @@
 
   .content :global(p > img) {
     margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thumbnail img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -84,6 +113,12 @@
   .content :global(li) {
     margin: 0 0 0.5em 0;
   }
+
+  @media (max-width: 420px) {
+    .content :global(p > img) {
+      width: 85%;
+    }
+  }
 </style>
 
 <svelte:head>
@@ -91,7 +126,15 @@
 </svelte:head>
 
 <section>
-  <h1>{post.title}</h1>
+  <h1 class="first-h2">{post.title}</h1>
+  <div class="thumbnail">
+    <img src={post.thumbnail} alt={post.title} />
+    <h5>
+      Közzétéve: {moment(post.date).format('lll')}
+      <br />
+      Szerző: {post.name}
+    </h5>
+  </div>
 
   <div class="content">
     {@html post.html}

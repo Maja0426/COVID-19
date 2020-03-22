@@ -103,7 +103,7 @@
 </style>
 
 <svelte:head>
-  <title>Blog</title>
+  <title>Blog | Balassagyarmat</title>
 </svelte:head>
 
 <div class="main-bg-hero" id="top">

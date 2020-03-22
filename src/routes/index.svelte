@@ -289,7 +289,7 @@
 
 <section>
   <article class="gif">
-    <h2 class="first-h2">Kövesd az utasításokat! Mutatom miért.</h2>
+    <h2 class="first-h2">Maradj otthon! Mutatom miért.</h2>
     <img
       alt="miért maradj otthon animáció"
       use:lazy={{ src: '.././img/covid-gif.gif' }} />
