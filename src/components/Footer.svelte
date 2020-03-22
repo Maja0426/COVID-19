@@ -1,0 +1,179 @@
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: #222;
+    color: #fff;
+  }
+
+  .main-sub-footer,
+  .sub-footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-sub-footer {
+    padding: 5px;
+  }
+
+  .main-sub-footer .col {
+    margin: 1%;
+  }
+
+  .main-sub-footer p,
+  .sub-footer-links p {
+    margin: 2px;
+    font-size: 18px;
+  }
+  .col {
+    display: flex;
+    width: 30%;
+    margin: 1% 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #02a3dd;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .sub-footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .col p a {
+    text-decoration: none;
+    color: #02a3dd;
+  }
+
+  .col p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .smartbee-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #222;
+    padding: 2% 0;
+  }
+
+  .smartbee-footer a {
+    text-decoration: none;
+    color: #02a3dd;
+  }
+
+  .smartbee-footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span {
+    color: #fdf9f3;
+  }
+
+  @media (max-width: 768px) {
+    .main-sub-footer,
+    .sub-footer-links {
+      flex-direction: column;
+    }
+
+    .sub-footer-links a {
+      margin-top: 0;
+    }
+
+    .smartbee-footer {
+      padding: 25px 0;
+    }
+
+    .main-sub-footer .col {
+      width: 90%;
+    }
+
+    .col a {
+      width: 70vw;
+    }
+  }
+</style>
+
+<section class="footer">
+  <div class="main-sub-footer">
+    <div class="col">
+      <p>Tógazda:</p>
+      <p>Jakab Zoltán</p>
+      <p>
+        <a href="mailto:+36303826329">+36(30)382-6329</a>
+      </p>
+    </div>
+    <div class="col">
+      <p>Gazdasági vezető:</p>
+      <p>Kissimon Géza</p>
+      <p>
+        <a href="mailto:+36202866746">+36(20)286-6746</a>
+      </p>
+    </div>
+    <div class="col">
+      <p>Halőr:</p>
+      <p>Takács József</p>
+      <p>
+        <a href="mailto:+36303063615">+36(30)306-3615</a>
+      </p>
+    </div>
+  </div>
+  <div class="sub-footer-links">
+
+    <p>
+      <a href="https://koronavirus.gov.hu/" target="_blank" rel="noreferrer">
+        Kormányzati koronavírus oldal
+      </a>
+    </p>
+    <p>
+      <a
+        href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+        target="_blank"
+        rel="noreferrer">
+        COVID-19 térkép
+      </a>
+    </p>
+    <p>
+      <a href="https://www.nnk.gov.hu/" target="_blank" rel="noreferrer">
+        NNK - Nemzeti Népegészségügyi Központ
+      </a>
+    </p>
+
+  </div>
+  <div class="smartbee-footer">
+    <div class="text">
+      <h5>
+        &copy; COPYRIGHT 2018-2020.
+        <a href="https://smartbeeweb.hu" target="_blank" rel="noreferrer">
+          SMART-BEE WEB
+        </a>
+      </h5>
+      <h5>
+        | All Right Reserved | POWERED BY
+        <span>SVELTE / SAPPER</span>
+        |
+      </h5>
+    </div>
+  </div>
+</section>
