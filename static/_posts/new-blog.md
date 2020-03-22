@@ -2,6 +2,7 @@
 layout: blog
 title: New Blog
 date: 2020-03-21T20:55:55.304Z
+thumbnail: /uploads/mockuper5.png
 ---
 ![computer](/uploads/mockuper5.png "Computer")
 
