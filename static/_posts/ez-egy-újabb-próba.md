@@ -2,6 +2,7 @@
 layout: blog
 title: Ez egy újabb próba
 date: 2020-03-21T18:55:18.243Z
+name: Majoros Tamás
 thumbnail: /uploads/képernyőkép-erről-2020-03-03-20-54-13.png
 ---
 ![My system](/uploads/képernyőkép-erről-2020-03-03-20-54-13.png "The system is working!!")
