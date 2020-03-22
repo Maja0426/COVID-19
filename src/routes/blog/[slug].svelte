@@ -49,6 +49,11 @@
     align-items: center;
   }
 
+  .back button {
+    margin: auto;
+    margin-top: 1em;
+  }
+
   .content :global(p > img) {
     margin: auto;
     width: 100%;
@@ -90,5 +95,10 @@
 
   <div class="content">
     {@html post.html}
+  </div>
+  <div class="back">
+    <a href="/blog">
+      <button>Előző oldal</button>
+    </a>
   </div>
 </section>

@@ -96,26 +96,25 @@ h1.first span {
 
 button {
   display: flex;
-  padding: 20px 30px;
-  background-color: #fff;
-  background-image: var(--stripe);
-  color: #000;
-  border: 2px solid #fff;
-  font-size: 20px;
+  padding: 15px 25px;
+  background-color: #000;
+  /* background-image: var(--stripe); */
+  color: #f7f8f8;
+  border: 2px solid #000;
+  font-size: 16px;
   opacity: 1;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
   font-weight: 400;
-  border-radius: 50px;
+  border-radius: 0;
 }
 
 button:hover {
   cursor: pointer;
   background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #000;
+  border: 2px solid #000;
   transition: 0.3s ease-in-out;
-  transform: scale(1.1);
 }
 
 button:focus {
