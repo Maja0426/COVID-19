@@ -36,7 +36,7 @@
 <style>
   .card {
     width: 25%;
-    min-width: 300px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     background: #fff;

@@ -1,3 +1,13 @@
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch(`blog.json`)
+      .then(r => r.json())
+      .then(posts => {
+        return { posts };
+      });
+  }
+</script>
+
 <script>
   import axios from "axios";
   import moment from "moment";
@@ -5,6 +15,8 @@
 
   import "moment/locale/hu";
   import Card from "../components/Card.svelte";
+
+  export let posts;
 
   const covidHunUrl = "https://covid19.mathdro.id/api/countries/hu";
   const covidGlobalUrl = "https://covid19.mathdro.id/api/";
@@ -158,6 +170,42 @@
     margin-top: 100px;
   }
 
+  .home {
+    background: #ff0000;
+    color: #000;
+    padding: 1em;
+    border-radius: 15px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #000;
+    color: #fff;
+  }
+
+  .date p,
+  .date h2 {
+    margin: 0;
+  }
+
+  .cards img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+
   @media (max-width: 1366px) {
     h1 {
       font-size: 5em;
@@ -188,6 +236,13 @@
       height: 70vh;
     }
 
+    .news {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
     .main-title-hero h3 {
       font-size: 1.2em;
     }
@@ -213,6 +268,9 @@
     h1 {
       font-size: 3em;
     }
+    .cards img {
+      max-height: 350px;
+    }
   }
 </style>
 
@@ -236,12 +294,23 @@
     </h3>
   </div>
 </div>
+
+<section class="news">
+  <h2 class="first-h2">legfrissebb cikkünk</h2>
+  <div class="cards">
+
+    <a rel="prefetch" href="./blog/{posts[0].slug}">
+      <img alt="corona logo" src={posts[0].thumbnail} />
+      <div class="date">
+        <h2>{posts[0].title}</h2>
+        <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
+      </div>
+    </a>
+  </div>
+</section>
+
 <section class="about" id="about">
-  <h2 class="first-h2">
-    koronavírus fertőzés
-    <br />
-    magyarországon
-  </h2>
+  <h2 class="first-h2">fertőzés helyzet magyarországon</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>
   <div class="card-wrapper">
     <Card>
@@ -266,7 +335,7 @@
   </a>
 
   <hr />
-  <h2 class="first-h2">világszerte</h2>
+  <h2 class="first-h2">fertőzés helyzet világszerte</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateGlobal).format('lll')}</h3>
   <div class="card-wrapper">
     <Card>
@@ -289,7 +358,7 @@
 
 <section>
   <article class="gif">
-    <h2 class="first-h2">Maradj otthon! Mutatom miért.</h2>
+    <h2 class="first-h2">Maradj otthon!</h2>
     <img
       alt="miért maradj otthon animáció"
       use:lazy={{ src: '.././img/covid-gif.gif' }} />
@@ -306,9 +375,9 @@
       pánikba, de gondolkozzunk és viselkedjünk felelős állampolgárok módján.
     </p>
 
-    <h2>
+    <h2 class="home">
       Nem csak jogaid, kötelességeid is vannak. Nem csak magadért, a
-      családodért, hanem az egész társadalomért felelőséggel tartozol.
+      családodért, hanem az egész társadalomért felelőséggel tartozol!
     </h2>
   </article>
 </section>

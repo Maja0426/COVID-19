@@ -182,9 +182,9 @@
         on:click={() => {
           menu = false;
         }}
-        class={segment === 'mask' ? 'selected' : ''}
-        href="mask">
-        Mikor kell maszk?
+        class={segment === 'knowledge' ? 'selected' : ''}
+        href="knowledge">
+        Tudástár
       </a>
     </li>
     <li>
