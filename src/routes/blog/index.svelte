@@ -125,7 +125,7 @@
 				waiting for the 'click' event -->
       <Card>
         <a rel="prefetch" href="blog/{post.slug}" slot="logo">
-          <img alt="corona logo" src="uploads/{post.thumbnail}" />
+          <img alt="corona logo" src={post.thumbnail} />
           <h2>{post.title}</h2>
           <p>Közzétéve: {moment(post.date).format('ll')}</p>
         </a>
