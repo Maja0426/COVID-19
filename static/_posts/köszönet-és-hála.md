@@ -2,7 +2,7 @@
 layout: blog
 title: 'KÖSZÖNET ÉS HÁLA! '
 date: 2020-03-20T20:53:39.324Z
-name: 'Csach Gábor (forrás: facebook)'
+name: 'Csach Gábor polgármester (forrás: facebook)'
 thumbnail: /uploads/koszonet_hala.jpg
 ---
 Néhány pillanattal ezelőtt beszélgettem Dr. Szabó Géza kórházigazgató főorvos úrral telefonon, aki megkért rá, hogy a teljes kórházi dolgozói állomány, különösen a több megyét (Nógrád, Komárom, Pest és Heves megye négy járása) ellátó infektológiai osztály nevében szeretné megköszönni a balassagyarmati vendéglátóhelyek és adományozók segítségét, amivel hozzájárulnak az emberfeletti lelki és nem ritkán fizikai terhelésben dolgozó munkatársak hangulatának javításához.
