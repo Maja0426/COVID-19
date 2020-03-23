@@ -1,0 +1,67 @@
+<div>
+  <ul class="lead list-group-flush">
+    <li class="list-group-item">
+      Próbálj kulturáltan viselkedni! Úgy beszélj másokkal, ahogy szemtől
+      szemben is beszélnél velük, és ahogy szeretnéd, hogy veled beszéljenek,
+      viselkedjenek az emberek!
+    </li>
+    <li class="list-group-item">
+      Ne személyeskedj, ne légy agresszív, ne zaklass másokat! Ne tegyél
+      gyűlölködő megjegyzéseket senkinek a nemére, vallására, etnikumára,
+      fizikumára, szexualitására. Semmijére se.
+    </li>
+    <li class="list-group-item">Ne posztolj semmilyen illegális dolgot!</li>
+    <li class="list-group-item">
+      Ne posztolj semmilyen gyűlöletkeltő tartalmat, legyen az kép, videó vagy
+      szöveg!
+    </li>
+    <li class="list-group-item">
+      Ne posztolj semmilyen erőszakos képet, szöveget vagy videót! Ne posztolj
+      semmi olyat, amin megvernek, megkínoznak, megölnek valakit.
+    </li>
+    <li class="list-group-item">
+      Ne posztolj pornót, szexképet, vagy videót! Rajzolt képet, vagy animációt
+      se. Ha a szüleidnek, gyerekednek nem mutatnád meg, akkor ide se küldd be.
+    </li>
+    <li class="list-group-item">
+      Ne adj meg másról olyan információt, ami alapján őket azonosítani lehetne!
+      Például lehet, hogy te tudod, hogy ki rejtőzik, az „XYZ32_7” nicknév
+      mögött, de ne írd le annak a személynek a nevét, vagy bármilyen adatát.
+    </li>
+    <li class="list-group-item">
+      Ne adj meg másokról vagy magadról bizalmas információt, amivel valaki
+      visszaélhet! Semmiképpen ne írd le, hogy te milyen jelszót szoktál
+      használni, vagy akár az emailedet se add meg nyilvánosan.
+    </li>
+    <li class="list-group-item">
+      Ne posztolj semmi olyat, ami kárt tehet más számítógépében! Ne rakj be
+      félrevezető, vírusos oldalra mutató linket, vagy képet.
+    </li>
+    <li class="list-group-item">
+      Ne vezess félre senkit azzal, hogy más embernek adod ki magad, mint aki
+      vagy! Ne hívjanak Kocsi Máténak és ne legyen a fotódon Kocsis Máté, ha nem
+      te vagy Kocsis Máté
+    </li>
+    <li class="list-group-item">
+      Ne használj 2MB-nál nagyobb képeket, csatolmányokat. Ha gif, ha nem gif,
+      ne legyen nagyobb 2 MB-nál.
+    </li>
+    <li class="list-group-item">
+      Ne posztolj semmi olyat, ami más tulajdona, vagy más okból nincs jogod
+      használni. Például ne használj olyan képet, amit nem te csináltál, hanem
+      mondjuk egy képügynökség, vagy egy olyan fotós, akit nem ismersz
+      személyesen.
+    </li>
+    <li class="list-group-item">
+      Ne spamelj! Ne küldd be ugyanazt a hozzászólást többször egymás után, se
+      egy, se több különböző cikk alatt!
+    </li>
+  </ul>
+  <h3 class="text-center mb-4">
+    Aki a fenti szabályokat nem tarja be, az nem kommentelhet az oldalon. Hogy
+    ki tartja be a szabályokat, és ki nem, azt a moderátor fogja eldönteni. Ő
+    elsősorban az itt leírtak alapján, de mindenféle részletes indoklás nélkül
+    eldönti, hogy melyik hozzászólás fér bele, és melyik nem.
+  </h3>
+  <hr class="my-3" />
+</div>

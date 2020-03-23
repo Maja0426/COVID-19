@@ -46,7 +46,7 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
       // DON'T EDIT BELOW THIS LINE
       var d = document,
         s = d.createElement("script");
-      s.src = "https://nyirjesihorgaszto.disqus.com/embed.js";
+      s.src = "https://bgykaranten.disqus.com/embed.js";
       s.setAttribute("data-timestamp", +new Date());
       (d.head || d.body).appendChild(s);
     })();
@@ -55,4 +55,7 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
     Please enable JavaScript to view the
     <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
   </noscript>
+  <script id="dsq-count-scr" src="//bgykaranten.disqus.com/count.js" async>
+
+  </script>
 </section>
