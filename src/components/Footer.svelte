@@ -38,6 +38,10 @@
     align-items: center;
   }
 
+  .links {
+    text-align: center;
+  }
+
   .sub-footer-links a {
     display: inline-block;
     text-decoration: none;
@@ -55,15 +59,12 @@
   .col p a {
     text-decoration: none;
     color: #02a3dd;
+    line-height: 2;
   }
 
   .col p a:hover {
     cursor: pointer;
     text-decoration: underline;
-  }
-
-  .virus-logo img {
-    width: 200px;
   }
 
   .smartbee-footer {
@@ -117,60 +118,68 @@
       width: 70vw;
     }
   }
+
+  @media (max-width: 320px) {
+    .smartbee-footer {
+      flex-direction: row;
+    }
+
+    .smartbee-footer h5 {
+      font-size: 16px;
+      padding: 0 10px;
+      text-align: center;
+    }
+  }
 </style>
 
 <section class="footer">
   <div class="main-sub-footer">
     <div class="col">
       <div class="logos">
-        <img src="../img/wash-hands.png" alt="hand washing graphic" />
+        <img src="../img/wash-hands2.png" alt="wash hands graphic" />
       </div>
-      <p>
-        <a href="impressum" rel="noreferrer">Impresszum</a>
-      </p>
-      <p>
-        <a href="cooky" rel="noreferrer">Sütik</a>
-      </p>
-      <p>
-        <a href="gdpr" rel="noreferrer">Adatvédelem</a>
-      </p>
     </div>
     <div class="col">
-      <div class="virus-logo">
-        <img src="../img/virus-blue.png" alt="blue virus logo" />
+      <div class="links">
+        <p>
+          <a
+            href="https://koronavirus.gov.hu/"
+            target="_blank"
+            rel="noreferrer">
+            Kormányzati koronavírus oldal
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+            target="_blank"
+            rel="noreferrer">
+            COVID-19 térkép
+          </a>
+        </p>
+        <p>
+          <a href="https://www.nnk.gov.hu/" target="_blank" rel="noreferrer">
+            NNK - Nemzeti Népegészségügyi Központ
+          </a>
+        </p>
       </div>
     </div>
     <div class="col">
       <div class="logos">
         <img src="../img/sope.png" alt="soap graphic" />
       </div>
-      <p>
-        <a href="mailto:+36303063615">+36(30)306-3615</a>
-      </p>
     </div>
   </div>
   <div class="sub-footer-links">
 
     <p>
-      <a href="https://koronavirus.gov.hu/" target="_blank" rel="noreferrer">
-        Kormányzati koronavírus oldal
-      </a>
+      <a href="impressum" rel="noreferrer">Impresszum</a>
     </p>
     <p>
-      <a
-        href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
-        target="_blank"
-        rel="noreferrer">
-        COVID-19 térkép
-      </a>
+      <a href="cooky" rel="noreferrer">Sütik</a>
     </p>
-    <p>
-      <a href="https://www.nnk.gov.hu/" target="_blank" rel="noreferrer">
-        NNK - Nemzeti Népegészségügyi Központ
-      </a>
-    </p>
-
   </div>
+
   <div class="smartbee-footer">
     <div class="text">
       <h5>

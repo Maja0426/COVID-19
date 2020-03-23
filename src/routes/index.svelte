@@ -28,6 +28,11 @@
   let recoveredGlobal;
   let deathsGlobal;
   let lastUpdateGlobal, lastUpdateHun;
+  let isBlogs = false;
+
+  $: if (posts.length >= 2) {
+    isBlogs = true;
+  }
 
   const loaded = new Map();
   let visible = false;
@@ -250,10 +255,6 @@
       flex-direction: column;
     }
 
-    /* section#about {
-      margin-bottom: -4em;
-    } */
-
     h1 {
       font-size: 3.5em;
     }
@@ -295,29 +296,31 @@
 </div>
 
 <section>
-  <h2 class="first-h2">legfrissebb cikkeink</h2>
-  <div class="news">
-    <div class="cards">
-      <a rel="prefetch" href="./blog/{posts[0].slug}">
-        <img alt="corona logo" src={posts[0].thumbnail} />
-        <div class="date">
-          <h2>{posts[0].title}</h2>
-          <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
-        </div>
-      </a>
-    </div>
+  {#if isBlogs}
+    <h2 class="first-h2">legfrissebb cikkeink</h2>
+    <div class="news">
+      <div class="cards">
+        <a rel="prefetch" href="./blog/{posts[0].slug}">
+          <img alt="corona logo" src={posts[0].thumbnail} />
+          <div class="date">
+            <h2>{posts[0].title}</h2>
+            <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
+          </div>
+        </a>
+      </div>
 
-    <div class="cards">
-      <a rel="prefetch" href="./blog/{posts[1].slug}">
-        <img alt="corona logo" src={posts[1].thumbnail} />
-        <div class="date">
-          <h2>{posts[1].title}</h2>
-          <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
-        </div>
-      </a>
+      <div class="cards">
+        <a rel="prefetch" href="./blog/{posts[1].slug}">
+          <img alt="corona logo" src={posts[1].thumbnail} />
+          <div class="date">
+            <h2>{posts[1].title}</h2>
+            <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-  <hr />
+    <hr />
+  {/if}
 
   <h2 class="first-h2">fertőzés helyzet magyarországon</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>
@@ -334,10 +337,6 @@
       <h2 slot="name">Elhunytak</h2>
       <h3 slot="number">{deathsHun}</h3>
     </Card>
-    <!-- <Card>
-      <h2 slot="name">Jelenleg fertőzöttek</h2>
-      <h3 slot="number">{confirmedHun - recoveredHun - deathsHun}</h3>
-    </Card> -->
   </div>
   <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">
     <h4>Forrás: Johns Hopkins CSSE</h4>
