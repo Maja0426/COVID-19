@@ -29,9 +29,13 @@
   let deathsGlobal;
   let lastUpdateGlobal, lastUpdateHun;
   let isBlogs = false;
+  let blogNum = 1;
 
-  $: if (posts.length >= 2) {
+  $: if (posts.length > 0) {
     isBlogs = true;
+  } else if (posts.length > 1) {
+    isBlogs = true;
+    blogNum = 2;
   }
 
   const loaded = new Map();
@@ -96,6 +100,10 @@
 </script>
 
 <style>
+  .none {
+    display: none;
+  }
+
   h1 {
     font-size: 6em;
     text-align: center;
@@ -314,7 +322,7 @@
         </a>
       </div>
 
-      <div class="cards">
+      <div class="cards {blogNum === 1 ? 'none' : ''}">
         <a rel="prefetch" href="./blog/{posts[1].slug}">
           <img alt="corona logo" src={posts[1].thumbnail} />
           <div class="date">
