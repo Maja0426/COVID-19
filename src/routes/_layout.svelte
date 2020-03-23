@@ -1,6 +1,7 @@
 <script>
   import Nav from "../components/Nav.svelte";
   import Footer from "../components/Footer.svelte";
+  import Scroll from "../components/Scroll.svelte";
 
   export let segment;
 </script>
@@ -21,3 +22,4 @@
   <slot />
 </main>
 <Footer />
+<Scroll {segment} />

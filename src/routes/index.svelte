@@ -136,6 +136,11 @@
     font-weight: 300;
   }
 
+  .back button {
+    margin: auto;
+    margin-top: 1em;
+  }
+
   .card-wrapper h3 {
     font-size: 3em;
   }
@@ -170,7 +175,7 @@
   }
 
   .home {
-    background: #ff0000;
+    background: #c31f09;
     background-image: var(--stripe);
     color: #fff;
     padding: 1em;
@@ -318,6 +323,11 @@
           </div>
         </a>
       </div>
+    </div>
+    <div class="back">
+      <a href="/blog">
+        <button>Előző oldal</button>
+      </a>
     </div>
     <hr />
   {/if}

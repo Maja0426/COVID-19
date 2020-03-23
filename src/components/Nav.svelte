@@ -59,7 +59,6 @@
     padding: 7px;
     margin: 10px;
     font-weight: bold;
-    border-radius: 3px;
     text-decoration: none;
     transition: 0.3s all ease-in;
   }
@@ -70,6 +69,7 @@
 
   .logo img {
     height: 50px;
+    border-radius: 5px;
   }
 
   /* clearfix */
@@ -185,6 +185,17 @@
         on:click={() => {
           menu = false;
         }}
+        rel="prefetch"
+        class={segment === 'blog' ? 'selected' : ''}
+        href="blog">
+        Hírek, információk
+      </a>
+    </li>
+    <li>
+      <a
+        on:click={() => {
+          menu = false;
+        }}
         class={segment === 'knowledge' ? 'selected' : ''}
         href="knowledge">
         Tudástár
@@ -208,17 +219,6 @@
         class={segment === 'disqus' ? 'selected' : ''}
         href="disqus">
         Fórum
-      </a>
-    </li>
-    <li>
-      <a
-        on:click={() => {
-          menu = false;
-        }}
-        rel="prefetch"
-        class={segment === 'blog' ? 'selected' : ''}
-        href="blog">
-        Hírek, információk
       </a>
     </li>
   </ul>

@@ -42,6 +42,10 @@
     text-align: center;
   }
 
+  .face-logo img {
+    width: 48px;
+  }
+
   .sub-footer-links a {
     display: inline-block;
     text-decoration: none;
@@ -170,6 +174,19 @@
       </div>
     </div>
   </div>
+
+  <div class="sub-footer-links">
+    <p class="face-logo">
+      <a
+        href="https://www.facebook.com/groups/Karanten/"
+        target="_blank"
+        rel="noreferrer"
+        title="Karantén-Balassagyarmat">
+        <img src="../img/facebook.svg" alt="facebook logo" />
+      </a>
+    </p>
+  </div>
+
   <div class="sub-footer-links">
 
     <p>
