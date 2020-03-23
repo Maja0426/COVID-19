@@ -326,7 +326,7 @@
     </div>
     <div class="back">
       <a href="/blog">
-        <button>Előző oldal</button>
+        <button>További cikkek, hírek</button>
       </a>
     </div>
     <hr />

@@ -56,6 +56,7 @@
   }
 
   .content {
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,7 +136,6 @@
       Szerző: {post.name}
     </h5>
   </div>
-
   <div class="content">
     {@html post.html}
   </div>
