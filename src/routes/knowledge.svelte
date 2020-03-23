@@ -128,7 +128,7 @@
   }
 
   .main-bg-hero {
-    background: url("../img/face-mask.jpg") no-repeat center/cover;
+    background: url("../img/virus1.jpg") no-repeat center/cover;
   }
 
   .sub-title {

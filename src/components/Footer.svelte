@@ -62,6 +62,10 @@
     text-decoration: underline;
   }
 
+  .virus-logo img {
+    width: 200px;
+  }
+
   .smartbee-footer {
     display: flex;
     flex-direction: column;
@@ -118,22 +122,28 @@
 <section class="footer">
   <div class="main-sub-footer">
     <div class="col">
-      <p>Tógazda:</p>
-      <p>Jakab Zoltán</p>
+      <div class="logos">
+        <img src="../img/wash-hands.png" alt="hand washing graphic" />
+      </div>
       <p>
-        <a href="mailto:+36303826329">+36(30)382-6329</a>
+        <a href="impressum" rel="noreferrer">Impresszum</a>
+      </p>
+      <p>
+        <a href="cooky" rel="noreferrer">Sütik</a>
+      </p>
+      <p>
+        <a href="gdpr" rel="noreferrer">Adatvédelem</a>
       </p>
     </div>
     <div class="col">
-      <p>Gazdasági vezető:</p>
-      <p>Kissimon Géza</p>
-      <p>
-        <a href="mailto:+36202866746">+36(20)286-6746</a>
-      </p>
+      <div class="virus-logo">
+        <img src="../img/virus-blue.png" alt="blue virus logo" />
+      </div>
     </div>
     <div class="col">
-      <p>Halőr:</p>
-      <p>Takács József</p>
+      <div class="logos">
+        <img src="../img/sope.png" alt="soap graphic" />
+      </div>
       <p>
         <a href="mailto:+36303063615">+36(30)306-3615</a>
       </p>

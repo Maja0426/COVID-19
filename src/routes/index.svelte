@@ -112,19 +112,6 @@
     margin: 2.5em auto;
   }
 
-  #about {
-    padding-bottom: 2em;
-  }
-
-  #about h3 {
-    display: flex;
-    justify-content: center;
-  }
-
-  #about a:hover {
-    text-decoration: underline;
-  }
-
   p {
     font-size: 20px;
   }
@@ -170,40 +157,51 @@
     margin-top: 100px;
   }
 
+  .news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
   .home {
     background: #ff0000;
-    color: #000;
+    background-image: var(--stripe);
+    color: #fff;
     padding: 1em;
     border-radius: 15px;
   }
 
   .cards {
-    display: flex;
+    width: 50%;
+    margin: 1em;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 1.5em;
   }
 
+  .cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .date {
+    margin-top: -9px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     background: #000;
     color: #fff;
+    padding: 0.5em 0;
   }
 
   .date p,
   .date h2 {
     margin: 0;
-  }
-
-  .cards img {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
   }
 
   @media (max-width: 1366px) {
@@ -237,10 +235,11 @@
     }
 
     .news {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+    }
+
+    .cards {
+      width: 100%;
     }
 
     .main-title-hero h3 {
@@ -251,9 +250,9 @@
       flex-direction: column;
     }
 
-    section#about {
+    /* section#about {
       margin-bottom: -4em;
-    }
+    } */
 
     h1 {
       font-size: 3.5em;
@@ -284,9 +283,9 @@
 <div class="main-bg-hero" id="top">
   <div class="main-title-hero">
     <h1>
-      COVID-19
+      <q>KARANTÉN</q>
       <br />
-      - INFO -
+      BGYARMAT
     </h1>
     <h3>
       koronavírussal (COVID-19) kapcsolatos tájékoztató oldal (nem csak)
@@ -295,21 +294,31 @@
   </div>
 </div>
 
-<section class="news">
-  <h2 class="first-h2">legfrissebb cikkünk</h2>
-  <div class="cards">
+<section>
+  <h2 class="first-h2">legfrissebb cikkeink</h2>
+  <div class="news">
+    <div class="cards">
+      <a rel="prefetch" href="./blog/{posts[0].slug}">
+        <img alt="corona logo" src={posts[0].thumbnail} />
+        <div class="date">
+          <h2>{posts[0].title}</h2>
+          <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
+        </div>
+      </a>
+    </div>
 
-    <a rel="prefetch" href="./blog/{posts[0].slug}">
-      <img alt="corona logo" src={posts[0].thumbnail} />
-      <div class="date">
-        <h2>{posts[0].title}</h2>
-        <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
-      </div>
-    </a>
+    <div class="cards">
+      <a rel="prefetch" href="./blog/{posts[1].slug}">
+        <img alt="corona logo" src={posts[1].thumbnail} />
+        <div class="date">
+          <h2>{posts[1].title}</h2>
+          <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
+        </div>
+      </a>
+    </div>
   </div>
-</section>
+  <hr />
 
-<section class="about" id="about">
   <h2 class="first-h2">fertőzés helyzet magyarországon</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>
   <div class="card-wrapper">
@@ -354,9 +363,7 @@
   <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">
     <h4>Forrás: Johns Hopkins CSSE</h4>
   </a>
-</section>
-
-<section>
+  <hr />
   <article class="gif">
     <h2 class="first-h2">Maradj otthon!</h2>
     <img
