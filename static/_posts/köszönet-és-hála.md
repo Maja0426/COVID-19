@@ -13,6 +13,6 @@ Minden balassagyarmati hálás nekik, és azt üzeni, hogy legyenek erősek, ma 
 
 Természetesen én is felajánlottam az Önkormányzat nevében a Kórháznak bármely segítséget: eszközök, egyéb szükségletek beszerzésére (legyen szó bármely alkatrészről, hangulatjavító eszközről, vagy akár lélegeztető gép beszerzéséről).
 
-Nem tudok mit mondani, egyszerűen büszke vagyok rá hogy Balassagyarmaton élek ![](https://static.xx.fbcdn.net/images/emoji.php/v9/t4c/1/16/1f642.png):)
+Nem tudok mit mondani, egyszerűen büszke vagyok rá hogy Balassagyarmaton élek :)
 
 PS: egyéb információs csatornáimból tájékoztatok mindenkit, hogy jelen állás szerint nincs Balassagyarmaton és a kórházban beazonosított COVID-19-es pozitív beteg. Információim szerint már túl vagyunk a 40. megfigyelt tesztjén is.
