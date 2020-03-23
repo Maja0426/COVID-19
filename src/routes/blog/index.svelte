@@ -12,7 +12,39 @@
   export let posts;
   import moment from "moment";
   import "moment/locale/hu";
+  import { onMount, onDestroy } from "svelte";
   import Card from "../../components/Card.svelte";
+
+  const loaded = new Map();
+  let visible = false;
+
+  function lazy(node, data) {
+    if (loaded.has(data.src)) {
+      node.setAttribute("src", data.src);
+    } else {
+      // simulate slow loading network
+      setTimeout(() => {
+        const img = new Image();
+        img.src = data.src;
+        img.onload = () => {
+          loaded.set(data.src, img);
+          node.setAttribute("src", data.src);
+        };
+      }, 50);
+    }
+
+    return {
+      destroy() {}
+    };
+  }
+
+  onMount(() => {
+    visible = true;
+  });
+
+  onDestroy(() => {
+    visible = false;
+  });
 </script>
 
 <style>
@@ -73,13 +105,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
 
   img {
     width: 100%;
-    height: auto;
-    max-height: 200px;
+    height: 250px;
+    object-fit: cover;
   }
 
   h2,
@@ -119,13 +151,9 @@
 <section>
   <div class="cards">
     {#each posts as post}
-      <!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
       <Card>
         <a rel="prefetch" href="blog/{post.slug}" slot="logo">
-          <img alt="corona logo" src={post.thumbnail} />
+          <img alt={post.title} use:lazy={{ src: post.thumbnail }} />
           <h2>{post.title}</h2>
           <p>Közzétéve: {moment(post.date).format('ll')}</p>
         </a>

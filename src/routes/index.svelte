@@ -61,7 +61,7 @@
           loaded.set(data.src, img);
           node.setAttribute("src", data.src);
         };
-      }, 200);
+      }, 50);
     }
 
     return {
@@ -184,6 +184,7 @@
 
   .cards {
     width: 50%;
+    height: 350px;
     margin: 1em;
     flex-direction: row;
     justify-content: center;
@@ -193,7 +194,7 @@
 
   .cards img {
     width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
   }
 
@@ -209,8 +210,7 @@
     padding: 0.5em 0;
   }
 
-  .date p,
-  .date h2 {
+  .date p {
     margin: 0;
   }
 
@@ -250,6 +250,7 @@
 
     .cards {
       width: 100%;
+      height: auto;
     }
 
     .main-title-hero h3 {
@@ -306,9 +307,9 @@
     <div class="news">
       <div class="cards">
         <a rel="prefetch" href="./blog/{posts[0].slug}">
-          <img alt="corona logo" src={posts[0].thumbnail} />
+          <img alt={posts[0].title} use:lazy={{ src: posts[0].thumbnail }} />
           <div class="date">
-            <h2>{posts[0].title}</h2>
+            <h3>{posts[0].title}</h3>
             <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
           </div>
         </a>
@@ -316,9 +317,9 @@
 
       <div class="cards">
         <a rel="prefetch" href="./blog/{posts[1].slug}">
-          <img alt="corona logo" src={posts[1].thumbnail} />
+          <img alt={posts[1].title} use:lazy={{ src: posts[1].thumbnail }} />
           <div class="date">
-            <h2>{posts[1].title}</h2>
+            <h3>{posts[1].title}</h3>
             <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
           </div>
         </a>
