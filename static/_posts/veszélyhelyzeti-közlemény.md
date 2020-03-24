@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 'VESZÉLYHELYZETI KÖZLEMÉNY '
+title: '10. VESZÉLYHELYZETI KÖZLEMÉNY '
 date: 2020-03-23T20:37:52.033Z
 name: 'Csach Gábor polgármester (forrás: facebook)'
 thumbnail: /uploads/corona1.jpg
