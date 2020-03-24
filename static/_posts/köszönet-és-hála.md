@@ -7,7 +7,7 @@ thumbnail: /uploads/koszonet_hala.jpg
 ---
 Néhány pillanattal ezelőtt beszélgettem Dr. Szabó Géza kórházigazgató főorvos úrral telefonon, aki megkért rá, hogy a teljes kórházi dolgozói állomány, különösen a több megyét (Nógrád, Komárom, Pest és Heves megye négy járása) ellátó infektológiai osztály nevében szeretné megköszönni a balassagyarmati vendéglátóhelyek és adományozók segítségét, amivel hozzájárulnak az emberfeletti lelki és nem ritkán fizikai terhelésben dolgozó munkatársak hangulatának javításához.
 
-Ugyanis többek közt a Karantén-Balassagyarmat [https://www.facebook.com/groups/Karanten/](https://www.facebook.com/groups/Karanten/?fref=mentions&hc_location=group) facebook csoport és mások szervezésében minden nap a kórházi dolgozók kisebb ajándékokat: pizzát, hamburgert, édességet stb. kapnak a város vállalkozóitól és civilektől. Ez a figyelmesség megerősít minden kórházi dolgozót abban, hogy a társadalom és a gyarmatiak különösen tisztában vannak a munkájuk értékével.
+Ugyanis többek közt a Karantén-Balassagyarmat [](https://www.facebook.com/groups/Karanten/?fref=mentions&hc_location=group) facebook csoport és mások szervezésében minden nap a kórházi dolgozók kisebb ajándékokat: pizzát, hamburgert, édességet stb. kapnak a város vállalkozóitól és civilektől. Ez a figyelmesség megerősít minden kórházi dolgozót abban, hogy a társadalom és a gyarmatiak különösen tisztában vannak a munkájuk értékével.
 
 Minden balassagyarmati hálás nekik, és azt üzeni, hogy legyenek erősek, ma ők a hétköznapok legnagyobb hősei!
 
