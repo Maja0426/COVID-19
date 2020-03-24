@@ -140,7 +140,7 @@
 
 <div class="main-bg-hero" id="top">
   <div class="main-title-hero">
-    <h1>Hírek, információk</h1>
+    <h1>Hírek, infók</h1>
     <h3>
       Hírek, információk, tudnivalók Balassagyarmat és környéke lakosságának a
       COVID-19 világjárvánnyal kapcsolatban.

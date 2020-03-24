@@ -119,6 +119,9 @@
     .content :global(p > img) {
       width: 85%;
     }
+    .first-h2 {
+      font-size: 2em;
+    }
   }
 </style>
 

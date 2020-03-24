@@ -96,6 +96,18 @@
 </script>
 
 <style>
+  .main-bg-hero {
+    background: url(".././img/covid-wallpaper.png") no-repeat 10% center/cover;
+  }
+
+  .main-title-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    opacity: 1;
+    margin-top: 100px;
+  }
+
   h1 {
     font-size: 6em;
     text-align: center;
@@ -147,24 +159,6 @@
 
   h4 {
     font-weight: 300;
-  }
-
-  .main-bg-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(".././img/covid-wallpaper.png") no-repeat 10% center/cover;
-    width: 100%;
-    height: 60vh;
-  }
-
-  .main-title-hero {
-    display: flex;
-    flex-direction: column;
-    padding: 0 5%;
-    opacity: 1;
-    margin-top: 100px;
   }
 
   .news {
@@ -290,7 +284,7 @@
 <div class="main-bg-hero" id="top">
   <div class="main-title-hero">
     <h1>
-      <q>KARANTÉN</q>
+      KARANTÉN
       <br />
       BGYARMAT
     </h1>

@@ -8,7 +8,7 @@
 
 <style>
   main {
-    position: relative;
+    width: 100%;
     background-color: #ffffff;
     color: #333;
     margin: 0;
