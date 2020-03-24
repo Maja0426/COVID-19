@@ -69,7 +69,9 @@
 <div class="card">
   <slot name="logo">
     <div class="card-logo">
-      <img alt="corona logo" use:lazy={{ src: '.././img/corona-logo.png' }} />
+      <img
+        alt="corona logo"
+        use:lazy={{ src: '.././img/flag_of_hungary.jpg' }} />
     </div>
   </slot>
   <div class="card-body">

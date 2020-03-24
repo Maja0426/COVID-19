@@ -18,15 +18,11 @@
 
   export let posts;
 
-  const covidHunUrl = "https://covid19.mathdro.id/api/countries/hu";
+  const covidHunUrl =
+    "https://api.apify.com/v2/key-value-stores/RGEUeKe60NjU16Edo/records/LATEST?disableRedirect=true";
   const covidGlobalUrl = "https://covid19.mathdro.id/api/";
-
-  let confirmedHun;
-  let recoveredHun;
-  let deathsHun;
-  let confirmedGlobal;
-  let recoveredGlobal;
-  let deathsGlobal;
+  let confirmedGlobal, recoveredGlobal, deathsGlobal;
+  let infectedHun, deceasedHun, recoveredHun, quarantinedHun, testedHun;
   let lastUpdateGlobal, lastUpdateHun;
   let isBlogs = false;
 
@@ -80,11 +76,14 @@
   onMount(async function getData() {
     try {
       const responseHun = await axios.get(covidHunUrl);
+      infectedHun = responseHun.data.infected;
+      deceasedHun = responseHun.data.deceased;
+      recoveredHun = responseHun.data.recovered;
+      quarantinedHun = responseHun.data.quarantined;
+      testedHun = responseHun.data.tested;
+      lastUpdateHun = responseHun.data.lastUpdatedAtApify;
+
       const responseGlobal = await axios.get(covidGlobalUrl);
-      confirmedHun = responseHun.data.confirmed.value;
-      recoveredHun = responseHun.data.recovered.value;
-      deathsHun = responseHun.data.deaths.value;
-      lastUpdateHun = responseHun.data.lastUpdate;
       confirmedGlobal = responseGlobal.data.confirmed.value;
       recoveredGlobal = responseGlobal.data.recovered.value;
       deathsGlobal = responseGlobal.data.deaths.value;
@@ -153,8 +152,19 @@
     margin-top: 1em;
   }
 
+  /* .doctors button {
+    margin-top: 3em;
+    background: #c31f09;
+    background-image: var(--stripe);
+  } */
+
+  /* .doctors button:hover {
+    background: transparent;
+    color: #000;
+  } */
+
   .card-wrapper h3 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   h4 {
@@ -242,6 +252,10 @@
       flex-direction: column;
     }
 
+    .card-wrapper h3 {
+      font-size: 2em;
+    }
+
     .cards {
       width: 100%;
       height: auto;
@@ -327,12 +341,19 @@
     <hr />
   {/if}
 
+  <!-- <div class="back doctors">
+    <a href="/doctors">
+      <button>Háziorvosok elérhetőségei</button>
+    </a>
+  </div>
+  <hr /> -->
+
   <h2 class="first-h2">fertőzés helyzet magyarországon</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>
   <div class="card-wrapper">
     <Card>
       <h2 slot="name">Összes fertőzöttek</h2>
-      <h3 slot="number">{confirmedHun}</h3>
+      <h3 slot="number">{infectedHun}</h3>
     </Card>
     <Card>
       <h2 slot="name">Gyógyult</h2>
@@ -340,11 +361,19 @@
     </Card>
     <Card>
       <h2 slot="name">Elhunytak</h2>
-      <h3 slot="number">{deathsHun}</h3>
+      <h3 slot="number">{deceasedHun}</h3>
+    </Card>
+    <Card>
+      <h2 slot="name">Karanténban</h2>
+      <h3 slot="number">{quarantinedHun}</h3>
+    </Card>
+    <Card>
+      <h2 slot="name">Mintavétel</h2>
+      <h3 slot="number">{testedHun}</h3>
     </Card>
   </div>
-  <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">
-    <h4>Forrás: Johns Hopkins CSSE</h4>
+  <a href="https:/koronavirus.gov.hu" target="_blank" rel="noreferrer">
+    <h4>Forrás: koronavirus.gov.hu</h4>
   </a>
 
   <hr />
@@ -352,14 +381,26 @@
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateGlobal).format('lll')}</h3>
   <div class="card-wrapper">
     <Card>
+      <img
+        slot="logo"
+        alt="corona logo"
+        use:lazy={{ src: '.././img/globe.jpg' }} />
       <h2 slot="name">Fertőzöttek száma</h2>
       <h3 slot="number">{confirmedGlobal}</h3>
     </Card>
     <Card>
+      <img
+        slot="logo"
+        alt="corona logo"
+        use:lazy={{ src: '.././img/globe.jpg' }} />
       <h2 slot="name">Gyógyult</h2>
       <h3 slot="number">{recoveredGlobal}</h3>
     </Card>
     <Card>
+      <img
+        slot="logo"
+        alt="corona logo"
+        use:lazy={{ src: '.././img/globe.jpg' }} />
       <h2 slot="name">Elhunytak</h2>
       <h3 slot="number">{deathsGlobal}</h3>
     </Card>

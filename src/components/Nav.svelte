@@ -68,8 +68,8 @@
   }
 
   .logo img {
-    height: 50px;
-    border-radius: 5px;
+    height: 60px;
+    border-radius: 50%;
   }
 
   /* clearfix */
@@ -169,7 +169,7 @@
 
 <nav>
   <a class="logo" href="." title="Főoldal">
-    <img src="./img/corona-logo2.jpg" alt="COVID19 logo" />
+    <img src="./img/corona-logo.jpg" alt="COVID19 logo" />
   </a>
   <div
     class={menu === false ? 'hamburger' : 'hamburger change'}
@@ -209,6 +209,16 @@
         class={segment === 'facts' ? 'selected' : ''}
         href="facts">
         Tények és tévhitek
+      </a>
+    </li>
+    <li>
+      <a
+        on:click={() => {
+          menu = false;
+        }}
+        class={segment === 'statistic' ? 'selected' : ''}
+        href="statistic">
+        Statisztikák
       </a>
     </li>
     <li>
