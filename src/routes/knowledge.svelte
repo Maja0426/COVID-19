@@ -576,8 +576,8 @@
 
   <ul>
     <li>
-      Ha Ön egészséges, csak akkor csak akkor kell maszkot viselnie, ha olyan
-      személlyel kerül kapcsolatba aki 2019-nCoV fertőzésgyanús.
+      Ha Ön egészséges, csak akkor kell maszkot viselnie, ha olyan személlyel
+      kerül kapcsolatba aki 2019-nCoV fertőzésgyanús.
     </li>
     <li>Viseljen maszkot, ha köhög vagy tüsszög.</li>
     <li>
