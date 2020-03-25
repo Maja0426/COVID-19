@@ -613,7 +613,7 @@
   </ul>
   *Forrás:
   <a
-    href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">
+    href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks">
     WHO
   </a>
 </section>

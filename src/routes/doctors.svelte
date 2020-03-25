@@ -77,7 +77,7 @@
   </h3>
   <h3>
     Mobilkészülékről böngészve a telefonszámokra kattintva az adott hívás
-    kezdeményezető.
+    kezdeményezető!
   </h3>
 
   <ul>
