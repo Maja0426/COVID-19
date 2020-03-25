@@ -579,7 +579,7 @@
       Ha Ön egészséges, csak akkor kell maszkot viselnie, ha olyan személlyel
       kerül kapcsolatba aki 2019-nCoV fertőzésgyanús.
     </li>
-    <li>Viseljen maszkot, ha köhög vagy tüsszög.</li>
+    <li>Viseljen maszkot, ha köhög és/vagy tüsszög.</li>
     <li>
       A maszkok csak akkor hatásosak, ha alkoholos alapú kézfertőtlenítő
       használatával vagy szappannal és vízzel történő gyakori kézmosással
