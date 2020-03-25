@@ -1,9 +1,9 @@
 ---
 layout: blog
-title: 'Felületfertőtlenítő gyárrá állította át egyik üzemét a Mol '
+title: 'Fertőtlenítő gyárrá állította át egyik üzemét a Mol '
 date: 2020-03-25T10:42:02.575Z
 name: MTI
-thumbnail: /uploads/mol3.jpg
+thumbnail: /uploads/mol4.jpg
 ---
 **A koronavírus elleni védekezés érdekében a Mol megkezdte a Magyarországon hiánycikknek számító kéz-, és felületfertőtlenítő termékek gyártását, a vállalatcsoporthoz tartozó és kenőanyagok gyártásával foglalkozó Mol Lub Kft. mindössze két hét alatt állította át almásfüzitői üzemének egyik, korábban szélvédőfolyadékot készítő gyártósorát - közölte a társaság.**
 
