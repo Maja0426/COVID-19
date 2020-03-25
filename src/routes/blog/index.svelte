@@ -92,7 +92,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
+    min-width: 200px;
     background: #000;
     color: #fff;
     padding: 0.3em;
@@ -138,6 +139,10 @@
     .cards {
       width: 100%;
       margin: 1em 0;
+    }
+
+    .body {
+      padding: 0;
     }
 
     h1 {
