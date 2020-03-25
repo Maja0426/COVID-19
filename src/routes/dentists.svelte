@@ -6,7 +6,7 @@
     font-size: 28px;
     padding: 10px;
     margin-top: 40px;
-    max-width: 500px;
+    max-width: 900px;
     margin: 50px auto 20px;
   }
 
@@ -23,6 +23,11 @@
   h2 {
     font-size: 60px;
     text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 1em;
   }
 
   ul {
@@ -49,6 +54,11 @@
 <section>
   <div class="header-bg" />
   <h2>FOGORVOSI ÜGYELET</h2>
+  <h3>
+    A koronavírus miatt elrendelt veszélyhelyzet ideje alatt a fogorvosi
+    alapellátók csak sürgősségi beavatkozásokat végezhetnek. Városunk ügyeleti
+    rendje:
+  </h3>
 
   <ul>
     <li class=" bg-gearbox ">1. körzet Rendelőintézet (Szontagh u.)</li>

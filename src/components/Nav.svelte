@@ -226,6 +226,16 @@
         on:click={() => {
           menu = false;
         }}
+        class={segment === 'statistic' ? 'doctors' : ''}
+        href="doctors">
+        Háziorvosi ügyelet
+      </a>
+    </li>
+    <li>
+      <a
+        on:click={() => {
+          menu = false;
+        }}
         class={segment === 'statistic' ? 'dentists' : ''}
         href="dentists">
         Fogovosi ügyelet
