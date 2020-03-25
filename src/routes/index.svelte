@@ -149,7 +149,7 @@
 
   .back button {
     margin: auto;
-    margin-top: 1em;
+    margin-top: 3em;
   }
 
   /* .doctors button {
@@ -203,6 +203,7 @@
   }
 
   .date {
+    height: 100px;
     margin-top: -9px;
     display: flex;
     flex-direction: column;
@@ -352,24 +353,34 @@
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>
   <div class="card-wrapper">
     <Card>
-      <h2 slot="name">Összes fertőzöttek</h2>
-      <h3 slot="number">{infectedHun}</h3>
+      <div slot="name">
+        <h2>Összes fertőzöttek</h2>
+        <h3>{infectedHun}</h3>
+      </div>
     </Card>
     <Card>
-      <h2 slot="name">Gyógyult</h2>
-      <h3 slot="number">{recoveredHun}</h3>
+      <div slot="name">
+        <h2>Gyógyult</h2>
+        <h3>{recoveredHun}</h3>
+      </div>
     </Card>
     <Card>
-      <h2 slot="name">Elhunytak</h2>
-      <h3 slot="number">{deceasedHun}</h3>
+      <div slot="name">
+        <h2>Elhunytak</h2>
+        <h3>{deceasedHun}</h3>
+      </div>
     </Card>
     <Card>
-      <h2 slot="name">Karanténban</h2>
-      <h3 slot="number">{quarantinedHun}</h3>
+      <div slot="name">
+        <h2>Karanténban</h2>
+        <h3>{quarantinedHun}</h3>
+      </div>
     </Card>
     <Card>
-      <h2 slot="name">Mintavétel</h2>
-      <h3 slot="number">{testedHun}</h3>
+      <div slot="name">
+        <h2>Mintavétel</h2>
+        <h3>{testedHun}</h3>
+      </div>
     </Card>
   </div>
   <a href="https:/koronavirus.gov.hu" target="_blank" rel="noreferrer">
@@ -385,24 +396,30 @@
         slot="logo"
         alt="corona logo"
         use:lazy={{ src: '.././img/globe.jpg' }} />
-      <h2 slot="name">Fertőzöttek száma</h2>
-      <h3 slot="number">{confirmedGlobal}</h3>
+      <div slot="name">
+        <h2>Fertőzöttek száma</h2>
+        <h3>{confirmedGlobal}</h3>
+      </div>
     </Card>
     <Card>
       <img
         slot="logo"
         alt="corona logo"
         use:lazy={{ src: '.././img/globe.jpg' }} />
-      <h2 slot="name">Gyógyult</h2>
-      <h3 slot="number">{recoveredGlobal}</h3>
+      <div slot="name">
+        <h2>Gyógyult</h2>
+        <h3>{recoveredGlobal}</h3>
+      </div>
     </Card>
     <Card>
       <img
         slot="logo"
         alt="corona logo"
         use:lazy={{ src: '.././img/globe.jpg' }} />
-      <h2 slot="name">Elhunytak</h2>
-      <h3 slot="number">{deathsGlobal}</h3>
+      <div slot="name">
+        <h2>Elhunytak</h2>
+        <h3>{deathsGlobal}</h3>
+      </div>
     </Card>
   </div>
   <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">

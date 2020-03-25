@@ -35,15 +35,15 @@
 
 <style>
   .card {
-    width: 25%;
+    /* width: 30%; */
     max-width: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #fff;
     color: #000;
     margin: 1em;
-    /* padding: 1em; */
-    /* border-radius: 5px; */
     box-shadow: 2px 2px 5px #222;
   }
 
@@ -52,8 +52,7 @@
   }
 
   .card-logo,
-  .card-body,
-  .card-footer {
+  .card-body {
     display: flex;
     justify-content: center;
     /* padding: 5px; */
@@ -61,7 +60,10 @@
 
   @media (max-width: 420px) {
     .card {
-      width: 90%;
+      width: 100%;
+      margin: 1em 0;
+      /* box-shadow: none; */
+      border: 1px solid #ccc;
     }
   }
 </style>
@@ -76,8 +78,5 @@
   </slot>
   <div class="card-body">
     <slot name="name" />
-  </div>
-  <div class="card-footer">
-    <slot name="number" />
   </div>
 </div>

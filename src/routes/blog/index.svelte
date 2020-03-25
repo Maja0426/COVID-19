@@ -48,6 +48,12 @@
 </script>
 
 <style>
+  section {
+    display: flex;
+    padding: 4em 10%;
+    flex-wrap: wrap;
+  }
+
   h1 {
     font-size: 6em;
     text-align: center;
@@ -68,6 +74,54 @@
     background: url("../img/news.jpg") no-repeat center/cover;
   }
 
+  .wrapper {
+    display: flex;
+  }
+
+  .cards {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 0.3em;
+  }
+
+  .image,
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    min-width: 100px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  h3,
+  h1 {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
   @media (max-width: 1366px) {
     h1 {
       font-size: 5em;
@@ -75,12 +129,29 @@
   }
 
   @media (max-width: 768px) {
+    section {
+      padding: 4em 2em;
+    }
+    .wrapper {
+      flex-direction: column;
+    }
+    .cards {
+      width: 100%;
+      margin: 1em 0;
+    }
+
     h1 {
       font-size: 4em;
+    }
+    h3 {
+      font-size: 1.5em;
     }
   }
 
   @media (max-width: 420px) {
+    section {
+      padding: 4em 1.5em;
+    }
     h3 {
       font-size: 16px;
     }
@@ -97,39 +168,6 @@
   @media (max-width: 320px) {
     h1 {
       font-size: 3em;
-    }
-  }
-  /*===============================*/
-  .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-  }
-
-  img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-
-  h2,
-  h1,
-  p {
-    text-align: center;
-    padding: 0.5em;
-  }
-
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.5em;
-    }
-  }
-
-  @media (max-width: 420px) {
-    .cards {
-      flex-direction: column;
     }
   }
 </style>
@@ -149,15 +187,19 @@
 </div>
 
 <section>
-  <div class="cards">
-    {#each posts as post}
-      <Card>
-        <a rel="prefetch" href="blog/{post.slug}" slot="logo">
-          <img alt={post.title} use:lazy={{ src: post.thumbnail }} />
-          <h2>{post.title}</h2>
-          <p>Közzétéve: {moment(post.date).format('ll')}</p>
-        </a>
-      </Card>
-    {/each}
-  </div>
+  {#each posts as post}
+    <div class="cards">
+      <a rel="prefetch" href="blog/{post.slug}">
+        <div class="wrapper">
+          <div class="image">
+            <img alt={post.title} use:lazy={{ src: post.thumbnail }} />
+          </div>
+          <div class="body">
+            <h3>{post.title}</h3>
+            <p>Közzétéve: {moment(post.date).format('ll')}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  {/each}
 </section>
