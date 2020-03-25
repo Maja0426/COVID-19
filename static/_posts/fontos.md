@@ -3,7 +3,7 @@ layout: blog
 title: FONTOS!!!
 date: 2020-03-25T18:13:11.102Z
 name: 'Csach Gábor polgármester (forrás: facebook)'
-thumbnail: /uploads/ap500539831020.png
+thumbnail: /uploads/cov.jpg
 ---
 ## 12. VESZÉLYHELYZETI KÖZLEMÉNY
 
