@@ -5,11 +5,9 @@ date: 2020-03-25T15:47:40.942Z
 name: MTI
 thumbnail: /uploads/valsag.jpg
 ---
-## Koronavírus - XXI. Század Intézet: jobb állapotban érte Magyarországot a mostani válság, mint a 2008-as
-
-
-
 ### **Budapest, 2020. március 25., szerda (MTI) - A XXI. Század Intézet elemzése szerint lényegesen jobb állapotban érte Magyarországot a mostani válság, mint a 2008-as, az országnak van elegendő ereje ahhoz, hogy ismét talpra álljon a koronavírus-járványt követően.**
+
+
 
 Deák Dániel, az intézet vezető elemzője, a honlapjukon szerdán közzétett beszámoló szerint arra hívta fel a figyelmet, hogy az előrejelzések alapján a 2008-as gazdasági világválsághoz hasonló negatív következménye lesz a gazdaságra nézve a mostani krízisnek. Ugyanakkor Magyarország számára a 2010 és 2020 közötti évtized a felhalmozás időszaka volt, így van elegendő erő a járvány utáni talpra álláshoz.
 
