@@ -27,7 +27,7 @@
 </style>
 
 <svelte:head>
-  <title>Balassagyarmat Koronavírus | Fórum</title>
+  <title>Koronavírus Balassagyarmat | Fórum</title>
 </svelte:head>
 <section>
   <h1 class="text-center">"KARANTÉN" FÓRUM</h1>

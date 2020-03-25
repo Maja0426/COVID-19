@@ -67,7 +67,7 @@
 </style>
 
 <svelte:head>
-  <title>Smart-Bee Web | Cookies</title>
+  <title>Koronavírus Balassagyarmat | Sütik</title>
 </svelte:head>
 
 <section>

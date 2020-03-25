@@ -290,7 +290,7 @@
 </style>
 
 <svelte:head>
-  <title>Balassagyarmat Koronavírus | Főoldal</title>
+  <title>Koronavírus Balassagyarmat | Kezdőlap</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
 
   </script>

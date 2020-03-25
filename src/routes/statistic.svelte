@@ -114,6 +114,10 @@
   }
 </style>
 
+<svelte:head>
+  <title>Koronavírus Balassagyarmat | Statisztikai adatok</title>
+</svelte:head>
+
 <div class="main-bg-hero" id="top">
   <div class="main-title-hero">
     <h1>Statisztikai adatok</h1>

@@ -226,6 +226,16 @@
         on:click={() => {
           menu = false;
         }}
+        class={segment === 'statistic' ? 'dentists' : ''}
+        href="dentists">
+        Fogovosi ügyelet
+      </a>
+    </li>
+    <li>
+      <a
+        on:click={() => {
+          menu = false;
+        }}
         class={segment === 'disqus' ? 'selected' : ''}
         href="disqus">
         Fórum

@@ -117,7 +117,7 @@
 </style>
 
 <svelte:head>
-  <title>Balassagyarmat Koronavírus | Tények-tévhitek</title>
+  <title>Koronavírus Balassagyarmat | Tények-tévhitek</title>
 </svelte:head>
 
 <div class="main-bg-hero" id="top">

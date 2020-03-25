@@ -252,7 +252,7 @@
 </style>
 
 <svelte:head>
-  <title>Balassagyarmat Koronavírus | Tudástár</title>
+  <title>Koronavírus Balassagyarmat | Tudástár</title>
 </svelte:head>
 
 <div class="main-bg-hero" id="top">
