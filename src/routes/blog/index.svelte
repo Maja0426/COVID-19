@@ -178,7 +178,7 @@
 </style>
 
 <svelte:head>
-  <title>Blog | Koronavírus Balassagyarmat</title>
+  <title>Koronavírus Balassagyarmat | Blog</title>
 </svelte:head>
 
 <div class="main-bg-hero" id="top">

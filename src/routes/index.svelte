@@ -219,6 +219,16 @@
     margin: 0;
   }
 
+  .donate {
+    width: 100%;
+    margin: auto;
+  }
+
+  .donate img {
+    margin-top: 2em;
+    width: 100%;
+  }
+
   @media (max-width: 1366px) {
     h1 {
       font-size: 5em;
@@ -449,4 +459,11 @@
       családodért, hanem az egész társadalomért felelőséggel tartozol!
     </h2>
   </article>
+  <!-- <hr /> -->
+  <div class="donate">
+    <h2 class="first-h2">Segíts hogy segíthessünk!</h2>
+    <img
+      alt="adomány számlaszám"
+      use:lazy={{ src: '.././img/donation2.jpg' }} />
+  </div>
 </section>
