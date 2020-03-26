@@ -21,8 +21,6 @@
 
   export let postMd;
 
-  $: rout = new URL(window.location.href);
-
   const md = new MarkdownIt();
 
   $: frontMatter = fm(postMd);
@@ -130,12 +128,12 @@
 
 <svelte:head>
   <title>{post.title}</title>
-  <meta property="og:url" content={rout} />
+  <!-- <meta property="og:url" content={post.rout} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={post.title} />
   <meta
     property="og:image"
-    content={`https://bgykaranten.hu${post.thumbnail}`} />
+    content={`https://bgykaranten.hu${post.thumbnail}`} /> -->
 </svelte:head>
 
 <section>
@@ -145,7 +143,7 @@
     <h5>
       Közzétéve: {moment(post.date).format('lll')}
       <br />
-      Szerző: {post.name} url: {rout}
+      Szerző: {post.name}
     </h5>
   </div>
   <div class="content">
@@ -153,7 +151,7 @@
   </div>
 
   <!-- Load Facebook SDK for JavaScript -->
-  <!-- <div id="fb-root" />
+  <!--   <div id="fb-root" />
   <script>
     (function(d, s, id) {
       var js,
@@ -168,10 +166,10 @@
   <!-- Your share button code -->
   <!-- <div
     class="fb-share-button"
-    data-href={rout}
+    data-href={post.rout}
     data-layout="button_count"
-    data-size="large" /> -->
-
+    data-size="large" / -->
+  >
   <div class="back">
     <a href="/blog">
       <button>Előző oldal</button>
