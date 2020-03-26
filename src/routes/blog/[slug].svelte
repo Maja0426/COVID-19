@@ -26,7 +26,8 @@
   $: frontMatter = fm(postMd);
   $: post = {
     ...frontMatter.attributes,
-    html: md.render(frontMatter.body)
+    html: md.render(frontMatter.body),
+    rout: window.location.href
   };
 </script>
 
@@ -128,12 +129,12 @@
 
 <svelte:head>
   <title>{post.title}</title>
-  <!-- <meta property="og:url" content={post.rout} />
+  <meta property="og:url" content={post.rout} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={post.title} />
   <meta
     property="og:image"
-    content={`https://bgykaranten.hu${post.thumbnail}`} /> -->
+    content={`https://bgykaranten.hu${post.thumbnail}`} />
 </svelte:head>
 
 <section>
@@ -151,7 +152,7 @@
   </div>
 
   <!-- Load Facebook SDK for JavaScript -->
-  <!--   <div id="fb-root" />
+  <div id="fb-root" />
   <script>
     (function(d, s, id) {
       var js,
@@ -162,13 +163,14 @@
       js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
-  </script> -->
+  </script>
   <!-- Your share button code -->
-  <!-- <div
+  <div
     class="fb-share-button"
     data-href={post.rout}
     data-layout="button_count"
-    data-size="large" /> -->
+    data-size="large" />
+
   <div class="back">
     <a href="/blog">
       <button>Előző oldal</button>
