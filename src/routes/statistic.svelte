@@ -64,6 +64,7 @@
 
   /*  iframe {
     display: flex;
+    max-width: 100%;
     justify-content: center;
     margin: auto;
   } */
@@ -135,19 +136,19 @@
     <h2 class="first-h2">COVID-19 vírusfertőzés alakulása magyarországon*</h2>
     <Charts
       comment=" (*Forrás: koronavirus.gov.hu, 03.25-i állapot)"
-      coordinateY={[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250]}
-      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}
-      perc={[32, 39, 50, 58, 73, 85, 103, 131, 167, 187, 226]} />
+      coordinateY={[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 270]}
+      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]}
+      perc={[32, 39, 50, 58, 73, 85, 103, 131, 167, 187, 226, 261]} />
     <p>x koordnáta: dátum, y koordináta: megbetegedések száma</p>
   </article>
   <article>
     <h2>COVID-19 vírusfertőzés miatti halálesetek*</h2>
     <Charts
-      barColor="#02a5c4"
+      barColor="#222222"
       comment=" (*Forrás: koronavirus.gov.hu, 03.25-i állapot)"
       coordinateY={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
-      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}
-      perc={[1, 1, 1, 1, 1, 4, 4, 6, 8, 9, 10]} />
+      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]}
+      perc={[1, 1, 1, 1, 1, 4, 4, 6, 8, 9, 10, 10]} />
     <p>x koordnáta: dátum, y koordináta: halálesetek száma</p>
   </article>
 </section>
@@ -157,4 +158,5 @@
   width="95%"
   height="800px"
   src="https://haarp.hu/"
-  frameborder="1" /> -->
+  frameborder="1" />
+ -->

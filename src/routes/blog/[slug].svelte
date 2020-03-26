@@ -150,9 +150,9 @@
 
 <svelte:head>
   <title>{post.title}</title>
-  <meta property="og:url" content="https://bgykaranten.hu/{slug}" />
   <meta property="og:title" content={post.title} />
   <meta property="og:image" content="https://bgykaranten.hu{post.thumbnail}" />
+  <meta property="og:url" content="https://bgykaranten.hu/{slug}" />
   <!-- Load Facebook SDK for JavaScript -->
   <script>
     (function(d, s, id) {

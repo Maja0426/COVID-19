@@ -2,7 +2,7 @@
   import { scaleLinear } from "d3-scale";
   export let comment = "";
   export let perc = [];
-  export let coordinateX;
+  export let coordinateX = [];
   export let coordinateY = [];
   export let barColor = "#ff3e00";
   export let barBorder = "none";
@@ -18,7 +18,8 @@
     { year: coordinateX[7], percentage: perc[7] },
     { year: coordinateX[8], percentage: perc[8] },
     { year: coordinateX[9], percentage: perc[9] },
-    { year: coordinateX[10], percentage: perc[10] }
+    { year: coordinateX[10], percentage: perc[10] },
+    { year: coordinateX[11], percentage: perc[11] }
   ];
 
   const xTicks = [...coordinateX];
@@ -51,7 +52,7 @@
 <style>
   .chart {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0.5em auto;
     margin-top: 4em;
     margin-bottom: 4em;
@@ -60,7 +61,7 @@
   svg {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 350px;
   }
 
   .tick {
