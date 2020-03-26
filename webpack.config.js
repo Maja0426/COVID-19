@@ -4,7 +4,7 @@ const config = require("sapper/config/webpack.js");
 const pkg = require("./package.json");
 
 const mode = process.env.NODE_ENV;
-const dev = mode === "production";
+const dev = mode === "development";
 
 const alias = { svelte: path.resolve("node_modules", "svelte") };
 const extensions = [".mjs", ".js", ".json", ".svelte", ".html"];
