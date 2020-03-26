@@ -168,8 +168,7 @@
     class="fb-share-button"
     data-href={post.rout}
     data-layout="button_count"
-    data-size="large" / -->
-  >
+    data-size="large" /> -->
   <div class="back">
     <a href="/blog">
       <button>Előző oldal</button>
