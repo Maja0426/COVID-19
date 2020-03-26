@@ -301,13 +301,6 @@
 
 <svelte:head>
   <title>Koronavírus Balassagyarmat | Kezdőlap</title>
-  <meta
-    property="og:title"
-    content="koronavírus-betegséggel kapcsolatos infomációk balassagyarmat és
-    térsége számára." />
-  <meta property="og:image" content="https://bgykaranten.hu/corona.jpg" />
-  <meta property="og:url" content="https://bgykaranten.hu/" />
-
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
 
   </script>
