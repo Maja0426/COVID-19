@@ -180,11 +180,11 @@
           Szerző: {post.name}
         </h5>
       </div>
-      <div
+      <!-- <div
         class="fb-share-button"
         data-href="https://bgykaranten.hu/blog/{slug}"
         data-layout="button"
-        data-size="small" />
+        data-size="small" /> -->
     </div>
   </div>
   <div class="content">
