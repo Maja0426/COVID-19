@@ -102,8 +102,8 @@
         Dr. Spruch Rezső (2020.04.01-ig helyettesíti Dr. Tassi Gábor)
       </li>
       <li>
-        <a href="tel:+3635505961" class="btn-contact">
-          recept felírás (35)505-961
+        <a href="tel:+3680620011" class="btn-contact">
+          recept felírás (80)620-011
         </a>
       </li>
       <li>
