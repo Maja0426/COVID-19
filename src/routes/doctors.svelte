@@ -10,10 +10,6 @@
     margin: 50px auto 20px;
   }
 
-  .btn-contact {
-    padding: 1em 2em;
-  }
-
   section {
     padding-top: 8em;
   }
@@ -30,6 +26,7 @@
     text-align: center;
   }
 
+  p,
   h3 {
     text-align: center;
     margin-top: 1em;
@@ -55,10 +52,6 @@
     li a {
       font-size: 16px;
     }
-
-    .btn-contact {
-      padding: 1em;
-    }
   }
 </style>
 
@@ -69,12 +62,12 @@
 <section>
   <div class="header-bg" />
   <h2>HÁZIORVOSI TELEFONOS ÜGYELET</h2>
-  <h3>
+  <p>
     Az EMMI miniszteri utasítása alapján a magas fertőzéses kockázat miatt
     megtiltották a felnőtt háziorvosoknak, hogy személyesen fogadjanak a
     rendelőben betegeket. Így városunkban is felnőtt betegfogadó rendelések
     megszűntek, csak telefonos rendelés, illetve receptfelírás történik.
-  </h3>
+  </p>
   <h3>
     Mobilkészülékről böngészve a telefonszámokra kattintva az adott hívás
     kezdeményezető!

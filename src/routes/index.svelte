@@ -171,6 +171,27 @@
     font-weight: 300;
   }
 
+  .doctors {
+    margin-top: 4em;
+    text-transform: uppercase;
+  }
+
+  .btn-contact {
+    background: var(--main-color);
+    background-image: var(--stripe);
+    color: #fff;
+    border: 2px solid var(--main-color);
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn-contact:hover {
+    background: transparent;
+    background-image: var(--stripe);
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.3s ease-in-out;
+  }
+
   .news {
     display: flex;
     justify-content: center;
@@ -301,6 +322,12 @@
 
 <svelte:head>
   <title>Koronavírus Balassagyarmat | Kezdőlap</title>
+  <meta
+    property="og:title"
+    content="koronavírus-betegséggel kapcsolatos infomációk balassagyarmat és
+    térsége számára." />
+  <meta property="og:image" content="https://bgykaranten.hu/corona.jpg" />
+  <meta property="og:url" content="https://bgykaranten.hu/" />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
 
   </script>
@@ -349,15 +376,12 @@
         <button>További cikkek, hírek</button>
       </a>
     </div>
-    <hr />
   {/if}
 
-  <!-- <div class="back doctors">
-    <a href="/doctors">
-      <button>Háziorvosok elérhetőségei</button>
-    </a>
+  <div class="back doctors">
+    <a href="/doctors" class="btn-contact">Háziorvosok elérhetőségei</a>
   </div>
-  <hr /> -->
+  <hr />
 
   <h2 class="first-h2">fertőzés helyzet magyarországon</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>

@@ -102,6 +102,7 @@ button {
 button:hover {
   cursor: pointer;
   background: transparent;
+  background-image: var(--stripe);
   color: #000;
   border: 2px solid #000;
   transition: 0.3s ease-in-out;
@@ -150,6 +151,10 @@ hr {
   background: transparent;
   color: #000;
   border: 2px solid #000;
+}
+
+.btn-contact {
+  padding: 1em 2em;
 }
 
 .btn-contact:hover {
@@ -225,5 +230,8 @@ hr {
   .first-h2,
   h1.first {
     font-size: 1.6em;
+  }
+  .btn-contact {
+    padding: 1em;
   }
 }

@@ -17,6 +17,10 @@
   import MarkdownIt from "markdown-it";
   import moment from "moment";
   import "moment/locale/hu";
+  import { stores } from "@sapper/app";
+
+  const { page } = stores();
+  const { slug } = $page.params;
 
   export let postMd;
 
@@ -48,9 +52,28 @@
     width: 100%;
   } */
 
+  .img-bar {
+    display: flex;
+    width: 100%;
+    background: #000;
+  }
+
+  .img-text {
+    display: flex;
+    width: 80%;
+  }
+
+  .fb-share-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    padding-right: 1em;
+  }
+
   h5 {
     width: inherit;
-    padding: 0.8em;
+    padding: 1em;
     background: #000;
     color: #fff;
   }
@@ -127,24 +150,10 @@
 
 <svelte:head>
   <title>{post.title}</title>
-</svelte:head>
-
-<section>
-  <h1 class="first-h2">{post.title}</h1>
-  <div class="thumbnail">
-    <img src={post.thumbnail} alt={post.title} />
-    <h5>
-      Közzétéve: {moment(post.date).format('lll')}
-      <br />
-      Szerző: {post.name}
-    </h5>
-  </div>
-  <div class="content">
-    {@html post.html}
-  </div>
-
+  <meta property="og:url" content="https://bgykaranten.hu/{slug}" />
+  <meta property="og:title" content={post.title} />
+  <meta property="og:image" content="https://bgykaranten.hu{post.thumbnail}" />
   <!-- Load Facebook SDK for JavaScript -->
-  <!-- <div id="fb-root" />
   <script>
     (function(d, s, id) {
       var js,
@@ -155,13 +164,32 @@
       js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
-  </script> -->
-  <!-- Your share button code -->
-  <!--  <div
-    class="fb-share-button"
-    data-href={post.rout}
-    data-layout="button_count"
-    data-size="large" /> -->
+  </script>
+</svelte:head>
+
+<section>
+  <div id="fb-root" />
+  <h1 class="first-h2">{post.title}</h1>
+  <div class="thumbnail">
+    <img src={post.thumbnail} alt={post.title} />
+    <div class="img-bar">
+      <div class="img-text">
+        <h5>
+          Közzétéve: {moment(post.date).format('lll')}
+          <br />
+          Szerző: {post.name}
+        </h5>
+      </div>
+      <div
+        class="fb-share-button"
+        data-href="https://bgykaranten.hu/blog/{slug}"
+        data-layout="button"
+        data-size="small" />
+    </div>
+  </div>
+  <div class="content">
+    {@html post.html}
+  </div>
 
   <div class="back">
     <a href="/blog">
