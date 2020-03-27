@@ -63,14 +63,14 @@
     width: 80%;
   }
 
-  /*   .fb-share-button {
+  .fb-share-button {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 20%;
     padding-right: 1em;
   }
- */
+
   h5 {
     width: inherit;
     padding: 1em;
@@ -150,6 +150,7 @@
 
 <svelte:head>
   <title>{post.title}</title>
+  <!-- <meta property="og:image" content="https://bgykaranten.hu{post.thumbnail}" /> -->
   <!-- Load Facebook SDK for JavaScript -->
   <script>
     (function(d, s, id) {
@@ -177,11 +178,11 @@
           Szerző: {post.name}
         </h5>
       </div>
-      <!-- <div
+      <div
         class="fb-share-button"
         data-href="https://bgykaranten.hu/blog/{slug}"
         data-layout="button"
-        data-size="small" /> -->
+        data-size="small" />
     </div>
   </div>
   <div class="content">
