@@ -33,7 +33,7 @@ A fertőzés megelőzése és a COVID-19 átvitelének lassítása érdekében t
 * Tartózkodjon a dohányzástól és más olyan tevékenységektől, amelyek gyengítik a tüdőt.
 * Gyakorold a fizikai távolságot azáltal, hogy elkerüli a felesleges utazást, és távol tartózkodik nagy emberek csoportjától.
 
-  ## Tünetek
+## Tünetek
 
 - - -
 
