@@ -5,8 +5,7 @@ date: 2020-03-27T15:37:23.253Z
 name: WHO - (ford.)Majoros Tamás
 thumbnail: /uploads/sneeze.jpg
 ---
-## Áttekintés
-
+## **Áttekintés**
 - - -
 
 A koronavírus betegség (COVID-19) egy újonnan felfedezett koronavírus okozta fertőző betegség.
@@ -19,8 +18,9 @@ A COVID-19 vírus elsősorban nyálcseppek vagy orrkiürülés útján terjed, a
 
 Jelenleg nincs specifikus oltás vagy kezelés a COVID-19-re.Számos klinikai vizsgálat van azomban folyamatban, a lehetséges kezelésekkel kapcsolatban. A WHO továbbra is rendszeresen fog információkat szolgáltatni ezek eredményeiről.
 
-## Megelőzés
 
+
+## **Megelőzés**
 - - -
 
 A fertőzés megelőzése és a COVID-19 átvitelének lassítása érdekében tegye a következőket:
@@ -33,8 +33,9 @@ A fertőzés megelőzése és a COVID-19 átvitelének lassítása érdekében t
 * Tartózkodjon a dohányzástól és más olyan tevékenységektől, amelyek gyengítik a tüdőt.
 * Gyakorold a fizikai távolságot azáltal, hogy elkerüli a felesleges utazást, és távol tartózkodik nagy emberek csoportjától.
 
-  ## Tünetek
 
+
+## **Tünetek**
 - - -
 
 A COVID-19 vírus különböző módon érinti a különböző embereket. A COVID-19 légzőszervi betegség, és a legtöbb fertőzött embernél enyhe vagy közepesen súlyos tünetekkel alakul ki, és speciális kezelés nem válik  szükségessé. Azoknál az embereknél, akik rossz egészségi állapotban vannak, és a 60 év felettieknél nagyobb a súlyos betegség és halál kockázata.
