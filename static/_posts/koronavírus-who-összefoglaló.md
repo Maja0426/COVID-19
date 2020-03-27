@@ -42,16 +42,11 @@ A COVID-19 vírus különböző módon érinti a különböző embereket. A COVI
 
 **Általános tünetek a következők:**
 
-* láz
-* fáradtság
-* száraz köhögés.
+* láz, fáradtság, száraz köhögés.
 
 **Egyéb tünetek:**
 
-* légszomj
-* fájdalmak
-* torokfájás
-* és nagyon kevés ember jelent meg hasmenés, hányinger vagy orrfolyás.
+* légszomj, fájdalmak, torokfájás és nagyon kevés ember jelent meg hasmenés, hányinger vagy orrfolyás.
 
 Az enyhe tünetekkel küzdő, egyébként egészséges embereknek önállóan el kell izolálódniuk, és kapcsolatba kell lépniük orvosukkal, vagy a COVID-19 információs vonallal, hogy tanácsot kapjanak a teszteléshez és a kezeléshez.
 
