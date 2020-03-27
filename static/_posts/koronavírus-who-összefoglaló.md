@@ -10,9 +10,9 @@ thumbnail: /uploads/sneeze.jpg
 
 A koronavírus betegség (COVID-19) egy újonnan felfedezett koronavírus okozta fertőző betegség.
 
-A legtöbb, a COVID-19 vírussal fertőzött ember enyhe vagy közepes mértékű légúti megbetegedést tapasztal és speciális kezelés nélkül felépül.Az idősebb embereknél és azoknál, akik mögöttes egészségügyi problémákkal küzdenek, mint például szív- és érrendszeri betegség, cukorbetegség, krónikus légzőszervi betegségek és rák, nagyobb valószínűséggel alakul ki súlyos betegség.
+A legtöbb, a COVID-19 vírussal fertőzött ember enyhe vagy közepes mértékű légúti megbetegedést tapasztal és speciális kezelés nélkül felépül. Az idősebb embereknél és azoknál, akik mögöttes egészségügyi problémákkal küzdenek, mint például szív- és érrendszeri betegség, cukorbetegség, krónikus légzőszervi betegségek és rák, nagyobb valószínűséggel alakul ki súlyos betegség.
 
-A a COVID-19 vírus megelőzésének és lelassításának legjobb módja az általa okozott betegségről és terjedéséről szóló megfelelő információ.Védje magát és másokat alapos kézmosással vagy alkoholos alapú kézfertőtlenítővel, és ne érintse meg az arcát.
+A a COVID-19 vírus megelőzésének és lelassításának legjobb módja az általa okozott betegségről és terjedéséről szóló megfelelő információ. Védje magát és másokat alapos kézmosással vagy alkoholos alapú kézfertőtlenítővel, és ne érintse meg az arcát.
 
 A COVID-19 vírus elsősorban nyálcseppek vagy orrkiürülés útján terjed, amikor egy fertőzött személy köhög vagy tüsszent, ezért fontos, hogy gyakoroljon légzőszervi etikettet is (például egy hajlított könyökbe köhögve).
 
@@ -25,13 +25,13 @@ Jelenleg nincs specifikus oltás vagy kezelés a COVID-19-re.Számos klinikai vi
 
 A fertőzés megelőzése és a COVID-19 átvitelének lassítása érdekében tegye a következőket:
 
-* Rendszeresen mosson kezet szappannal és vízzel, vagy tisztítsa meg őket alkoholos bõrrel.
-* Tartsa fenn legalább 1 méter távolságot közted és a köhögés vagy tüsszentés között.
+* Rendszeresen mosson kezet szappannal és vízzel, vagy tisztítsa meg alkoholos kézfertőtlenítővel.
+* Tartson fenn legalább 1 méter távolságot önmaga és köhögő vagy tüsszögő ember között.
 * Kerülje az arc megérintését.
-* Fedje le a száját és az orrát, ha köhög vagy tüsszent.
-* Hagyja magát otthon, ha rosszul érzi magát.
+* Takarja el a száját és az orrát, ha köhög vagy tüsszent.
+* Maradjon otthon, ha rosszul érzi magát.
 * Tartózkodjon a dohányzástól és más olyan tevékenységektől, amelyek gyengítik a tüdőt.
-* Gyakorold a fizikai távolságot azáltal, hogy elkerüli a felesleges utazást, és távol tartózkodik nagy emberek csoportjától.
+* Tartson a fizikai távolságot azáltal, hogy elkerüli a felesleges utazást, és távol tartja magát emberek csoportjától.
 
 
 
