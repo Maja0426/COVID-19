@@ -25,13 +25,13 @@ Jelenleg nincs specifikus oltás vagy kezelés a COVID-19-re.Számos klinikai vi
 
 A fertőzés megelőzése és a COVID-19 átvitelének lassítása érdekében tegye a következőket:
 
-* Rendszeresen mosson kezet szappannal és vízzel, vagy tisztítsa meg őket alkoholos bõrrel.
-* Tartsa fenn legalább 1 méter távolságot közted és a köhögés vagy tüsszentés között.
+* Rendszeresen mosson kezet szappannal és vízzel, vagy tisztítsa meg alkoholos kézfertőtlenítővel.
+* Tartson fenn legalább 1 méter távolságot önmaga és köhögő vagy tüsszögő ember között.
 * Kerülje az arc megérintését.
-* Fedje le a száját és az orrát, ha köhög vagy tüsszent.
-* Hagyja magát otthon, ha rosszul érzi magát.
+* Takarja el a száját és az orrát, ha köhög vagy tüsszent.
+* Maradjon otthon, ha rosszul érzi magát.
 * Tartózkodjon a dohányzástól és más olyan tevékenységektől, amelyek gyengítik a tüdőt.
-* Gyakorold a fizikai távolságot azáltal, hogy elkerüli a felesleges utazást, és távol tartózkodik nagy emberek csoportjától.
+* Tartson a fizikai távolságot azáltal, hogy elkerüli a felesleges utazást, és távol tartja magát emberek csoportjától.
 
 
 
