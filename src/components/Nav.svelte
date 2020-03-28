@@ -241,7 +241,7 @@
         Fogovosi ügyelet
       </a>
     </li>
-    <li>
+    <!-- <li>
       <a
         on:click={() => {
           menu = false;
@@ -250,6 +250,6 @@
         href="disqus">
         Fórum
       </a>
-    </li>
+    </li> -->
   </ul>
 </nav>

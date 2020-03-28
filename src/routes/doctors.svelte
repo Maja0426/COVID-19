@@ -46,6 +46,11 @@
     h2 {
       font-size: 40px;
     }
+
+    .btn-contact {
+      background-image: var(--stripe);
+      border-radius: 5px;
+    }
   }
 
   @media (max-width: 340px) {
