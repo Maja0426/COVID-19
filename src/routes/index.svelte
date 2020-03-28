@@ -147,21 +147,10 @@
     font-weight: 300;
   }
 
-  .back button {
+  .news {
     margin: auto;
     margin-top: 3em;
   }
-
-  /* .doctors button {
-    margin-top: 3em;
-    background: #c31f09;
-    background-image: var(--stripe);
-  } */
-
-  /* .doctors button:hover {
-    background: transparent;
-    color: #000;
-  } */
 
   .card-wrapper h3 {
     font-size: 2.5em;
@@ -173,22 +162,21 @@
 
   .doctors {
     margin-top: 4em;
-    text-transform: uppercase;
   }
 
   .btn-contact {
-    background: var(--main-color);
-    background-image: var(--stripe);
-    color: #fff;
-    border: 2px solid var(--main-color);
-    transition: 0.3s ease-in-out;
-  }
-
-  .btn-contact:hover {
     background: transparent;
     background-image: var(--stripe);
     color: #000;
     border: 2px solid #000;
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn-contact:hover {
+    background: var(--main-color);
+    background-image: var(--stripe);
+    color: #fff;
+    border: 2px solid var(--main-color);
     transition: 0.3s ease-in-out;
   }
 
@@ -371,10 +359,8 @@
         </a>
       </div>
     </div>
-    <div class="back">
-      <a href="/blog">
-        <button>További cikkek, hírek</button>
-      </a>
+    <div class="news">
+      <a href="/blog" class="btn-contact">További cikkek, hírek</a>
     </div>
   {/if}
 

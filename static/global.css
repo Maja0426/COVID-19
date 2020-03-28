@@ -151,9 +151,7 @@ hr {
   background: transparent;
   color: #000;
   border: 2px solid #000;
-}
-
-.btn-contact {
+  text-transform: uppercase;
   padding: 1em 2em;
 }
 
