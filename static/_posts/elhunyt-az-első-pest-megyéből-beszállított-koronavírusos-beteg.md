@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 'Elhunyt az első, Pest megyéből beszállított koronavírusos beteg'
+title: RENDKÍVÜLI HÍR!
 date: 2020-03-28T10:56:59.803Z
 name: bgykaranten
 thumbnail: /uploads/hospital.jpg
