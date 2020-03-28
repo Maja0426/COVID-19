@@ -53,11 +53,17 @@
     }
   }
 
-  @media (max-width: 340px) {
+  @media (max-width: 420px) {
     li a {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
+
+  /* @media (max-width: 340px) {
+    li a {
+      font-size: 14px;
+    }
+  } */
 </style>
 
 <svelte:head>
