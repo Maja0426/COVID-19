@@ -96,7 +96,7 @@
 
 <style>
   .main-bg-hero {
-    background: url(".././img/covid-wallpaper.png") no-repeat 15% center/cover;
+    background: url(".././img/covid-wallpaper.png") no-repeat 10% center/cover;
   }
 
   .main-title-hero {
