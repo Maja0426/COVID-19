@@ -2,7 +2,7 @@
 layout: blog
 title: Elhunyt az első Balassagyarmaton kezelt beteg.
 date: 2020-03-28T10:14:50.577Z
-name: bgykaranten.hu
+name: bgykaranten
 thumbnail: /uploads/varoshaza.jpg
 ---
 ## A polgármester Úr facebook oldalán nem sokkal ezelőtt jelentette be, hogy elhunyt az első, pest megyéből beszállított beteg. Részvétünk a családnak.
