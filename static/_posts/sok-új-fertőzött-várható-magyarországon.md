@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Sok új fertőzött várható Magyarországon
-date: 2020-03-29T15:37:36.145Z
+date: 2020-03-29T15:37:00.000Z
 name: MTI
 thumbnail: /uploads/operativtorzs.jpg
 ---
@@ -29,8 +29,7 @@ Szerinte a magyarországi halálozási arány, a többi érintett országhoz ké
 
 Az elhunytak alapbetegsége egyébként megfelel a magyar mortalitási adatoknak. Vagyis, mintegy 50 százalékuk szív és érrendszeri, egynegyedük pedig daganatos megbetegedésben szenvedett. Az átlagéletkoruk 69 év - mondta.
 
-Arról is beszámolt, hogy **14 beteg kap jelenleg lélegeztetőgépes, intenzív kezelést.**
-Azzal kapcsolatban hogy koronavírus-fertőzést mutattak ki a nagymágocsi idősotthon egyik lakójánál, Müller Cecília elmondta, hogy szombaton az otthon egyik gondozottja elesett és ezért kórházba vitték, ahol belázasodott és kiderült, hogy fertőzött.
+Arról is beszámolt, hogy **14 beteg kap jelenleg lélegeztetőgépes, intenzív kezelést.** Azzal kapcsolatban hogy koronavírus-fertőzést mutattak ki a nagymágocsi idősotthon egyik lakójánál, Müller Cecília elmondta, hogy szombaton az otthon egyik gondozottja elesett és ezért kórházba vitték, ahol belázasodott és kiderült, hogy fertőzött.
 
 Azóta az otthon 286 lakója közül 7 esetében mutatták ki a vírust, ám a dolgozók közül senki nem fertőződött meg; a járványügyi intézkedések zajlanak - ismertette.
 
