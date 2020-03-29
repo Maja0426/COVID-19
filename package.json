@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "BGYKARANTEN",
+  "description": "Balassagyarmat nemhivatalos COVID-19 járvány oldala.",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
