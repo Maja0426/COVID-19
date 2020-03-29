@@ -1,101 +1,33 @@
-<!DOCTYPE html>
-<html lang="hu">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="theme-color" content="#333333" />
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+	<meta name='theme-color' content='#333333'>
 
-    <meta
-      name="description"
-      content="Hiteles, naprakész információk a COVID-19 koronavírusról, a védekezés, megelőzés lehetőségeiről, balassagyarmat és térsége számára."
-    />
-    <meta name="author" content="Smart-Bee Web Balassagyarmat" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="Keywords"
-      content="koronavírus, covid19, covid-19, corona, balassagyarmat, karantén, karantén-balassagyarmat, coronavirus, járvány, koronavírus-betegség"
-    />
-    <meta name="og:locale" content="hu_HU" />
-    <meta property="og:type" content="website" />
-    <!-- <meta
-      property="og:title"
-      content="koronavírus-betegséggel kapcsolatos infomációk balassagyarmat és térsége számára."
-    /> -->
-    <meta
-      property="og:description"
-      content="Hiteles, naprakész információk a COVID-19 koronavírusról, a védekezés, megelőzés lehetőségeiről, balassagyarmat és térsége számára."
-    />
-    <!-- <meta property="og:image" content="https://bgykaranten.hu/corona.jpg" />
-    <meta property="og:url" content="https://bgykaranten.hu/" /> -->
+	%sapper.base%
 
-    %sapper.base%
+	<link rel='stylesheet' href='global.css'>
+	<link rel='manifest' href='manifest.json' crossorigin='use-credentials'>
+	<link rel='icon' type='image/png' href='favicon.png'>
 
-    <link rel="stylesheet" href="global.css" />
-    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="apple-touch-icon" href="logo-192.png" />
-
-    <!-- Cooky -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <script>
-      window.addEventListener("load", function() {
-        window.cookieconsent.initialise({
-          palette: {
-            popup: {
-              background: "#000000"
-            },
-            button: {
-              background: "#c31f09",
-              color: "#fff"
-            }
-          },
-          content: {
-            message:
-              "Ez a weboldal cookie-kat használ annak biztosítására, hogy a lehető legjobb élményt nyújthassuk honlapunkon.",
-            dismiss: "Rendben!",
-            link: "További tudnivalók",
-            href: "/cooky"
-          }
-        });
-      });
-    </script>
-
-    <!-- Sapper generates a <style> tag containing critical CSS
+	<!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
-    %sapper.styles%
+	%sapper.styles%
 
-    <!-- This contains the contents of the <svelte:head> component, if
+	<!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
-    %sapper.head%
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-161624006-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-161624006-1");
-    </script>
-  </head>
-  <body>
-    <!-- The application will be rendered inside this element,
+	%sapper.head%
+</head>
+<body>
+	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-    <div id="sapper">%sapper.html%</div>
+	<div id='sapper'>%sapper.html%</div>
 
-    <!-- Sapper creates a <script> tag containing `src/client.js`
+	<!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
-    %sapper.scripts%
-  </body>
+	%sapper.scripts%
+</body>
 </html>
