@@ -2,7 +2,7 @@
   export async function preload({ params, query }) {
     // the `slug` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`_posts/${params.slug}.md`);
+    const res = await this.fetch(`./_posts/${params.slug}.md`);
 
     if (res.status === 200) {
       return { postMd: await res.text() };
@@ -151,8 +151,6 @@
 
 <svelte:head>
   <title>{post.title}</title>
-  <!-- <meta property="og:image" content="https://bgykaranten.hu{post.thumbnail}" /> -->
-  <!-- Load Facebook SDK for JavaScript -->
   <script>
     (function(d, s, id) {
       var js,
