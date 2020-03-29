@@ -80,15 +80,16 @@
 
   .content {
     margin-top: 4em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: justify;
   }
 
   .back button {
     margin: auto;
     margin-top: 1em;
+  }
+
+  .content :global(h1, h2) {
+    text-align: center;
   }
 
   .content :global(p > img) {
