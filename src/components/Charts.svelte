@@ -4,7 +4,7 @@
   export let perc = [];
   export let coordinateX = [];
   export let coordinateY = [];
-  export let barColor = "#ff3e00";
+  export let barColor = "#c31f09";
   export let barBorder = "none";
 
   const points = [
@@ -21,7 +21,8 @@
     { year: coordinateX[10], percentage: perc[10] },
     { year: coordinateX[11], percentage: perc[11] },
     { year: coordinateX[12], percentage: perc[12] },
-    { year: coordinateX[13], percentage: perc[13] }
+    { year: coordinateX[13], percentage: perc[13] },
+    { year: coordinateX[14], percentage: perc[14] }
   ];
 
   const xTicks = [...coordinateX];

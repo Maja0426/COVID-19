@@ -135,20 +135,20 @@
   <article>
     <h2>COVID-19 igazolt fertőzöttek számának alakulása magyarországon*</h2>
     <Charts
-      comment=" (*Forrás: koronavirus.gov.hu, 03.28-i állapot)"
-      coordinateY={[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 270, 290, 310, 330, 350]}
-      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]}
-      perc={[32, 39, 50, 58, 73, 85, 103, 131, 167, 187, 226, 261, 300, 343]} />
+      comment=" (*Forrás: koronavirus.gov.hu, 03.29-i állapot)"
+      coordinateY={[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360, 390, 420, 450]}
+      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]}
+      perc={[32, 39, 50, 58, 73, 85, 103, 131, 167, 187, 226, 261, 300, 343, 408]} />
     <p>x koordnáta: dátum, y koordináta: megbetegedések száma</p>
   </article>
   <article>
     <h2>COVID-19 vírusfertőzés miatti halálesetek magyarországon*</h2>
     <Charts
       barColor="#222222"
-      comment=" (*Forrás: koronavirus.gov.hu, 03.28-i állapot)"
-      coordinateY={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
-      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]}
-      perc={[1, 1, 1, 1, 1, 4, 4, 6, 8, 9, 10, 10, 10, 11]} />
+      comment=" (*Forrás: koronavirus.gov.hu, 03.29-i állapot)"
+      coordinateY={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]}
+      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]}
+      perc={[1, 1, 1, 1, 1, 4, 4, 6, 8, 9, 10, 10, 10, 11, 13]} />
     <p>x koordnáta: dátum, y koordináta: halálesetek száma</p>
   </article>
 </section>
