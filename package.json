@@ -1,6 +1,6 @@
 {
-  "name": "BGYKARANTEN",
-  "description": "BGYKARANTEN",
+  "name": "Bgykaranten",
+  "description": "Balassagyarmat nem hivatalos COVID-19 járvány tájékoztató oldala.",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
