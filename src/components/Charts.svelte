@@ -22,7 +22,8 @@
     { year: coordinateX[11], percentage: perc[11] },
     { year: coordinateX[12], percentage: perc[12] },
     { year: coordinateX[13], percentage: perc[13] },
-    { year: coordinateX[14], percentage: perc[14] }
+    { year: coordinateX[14], percentage: perc[14] },
+    { year: coordinateX[15], percentage: perc[15] }
   ];
 
   const xTicks = [...coordinateX];
