@@ -238,9 +238,12 @@
     width: 100%;
   }
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     h1 {
       font-size: 5em;
+    }
+    .main-title-hero h3 {
+      font-size: 1.5em;
     }
 
     h2 {
@@ -330,7 +333,7 @@
     </h1>
     <h3>
       koronavírussal (COVID-19) kapcsolatos tájékoztató oldal (nem csak)
-      balasssagyarmatiak számára
+      balassagyarmatiak számára
     </h3>
   </div>
 </div>

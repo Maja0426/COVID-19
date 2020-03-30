@@ -186,9 +186,16 @@
     border-radius: 100%;
   }
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     h1 {
       font-size: 5em;
+    }
+    .main-title-hero h3 {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 2em;
     }
   }
 

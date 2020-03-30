@@ -123,9 +123,12 @@
     text-align: center;
   }
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     h1 {
       font-size: 5em;
+    }
+    .main-title-hero h3 {
+      font-size: 1.5em;
     }
   }
 
@@ -173,6 +176,9 @@
   @media (max-width: 320px) {
     h1 {
       font-size: 3em;
+    }
+    .main-title-hero h3 {
+      font-size: 1em;
     }
   }
 </style>
