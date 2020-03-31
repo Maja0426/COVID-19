@@ -20,6 +20,7 @@
 
   const covidHunUrl =
     "https://api.apify.com/v2/key-value-stores/RGEUeKe60NjU16Edo/records/LATEST?disableRedirect=true";
+  const covidHUNCSSE = "https://covid19.mathdro.id/api/countries/hu";
   const covidGlobalUrl = "https://covid19.mathdro.id/api/";
   let confirmedGlobal, recoveredGlobal, deathsGlobal;
   let infectedHun, deceasedHun, recoveredHun, quarantinedHun, testedHun;
@@ -76,12 +77,14 @@
   onMount(async function getData() {
     try {
       const responseHun = await axios.get(covidHunUrl);
-      infectedHun = responseHun.data.infected;
-      deceasedHun = responseHun.data.deceased;
-      recoveredHun = responseHun.data.recovered;
       quarantinedHun = responseHun.data.quarantined;
       testedHun = responseHun.data.tested;
-      lastUpdateHun = responseHun.data.lastUpdatedAtApify;
+
+      const responseHUNCSSE = await axios.get(covidHUNCSSE);
+      infectedHun = responseHUNCSSE.data.confirmed.value;
+      deceasedHun = responseHUNCSSE.data.deaths.value;
+      recoveredHun = responseHUNCSSE.data.recovered.value;
+      lastUpdateHun = responseHun.data.lastUpdate;
 
       const responseGlobal = await axios.get(covidGlobalUrl);
       confirmedGlobal = responseGlobal.data.confirmed.value;
@@ -406,9 +409,15 @@
       </div>
     </Card>
   </div>
-  <a href="https:/koronavirus.gov.hu" target="_blank" rel="noreferrer">
-    <h4>Forrás: koronavirus.gov.hu</h4>
-  </a>
+  <h4>
+    Forrás:
+    <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">
+      Johns Hopkins CSSE,
+    </a>
+    <a href="https:/koronavirus.gov.hu" target="_blank" rel="noreferrer">
+      koronavirus.gov.hu
+    </a>
+  </h4>
 
   <hr />
   <h2 class="first-h2">fertőzés helyzet világszerte</h2>
