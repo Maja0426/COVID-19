@@ -427,7 +427,7 @@
       <img
         slot="logo"
         alt="corona logo"
-        use:lazy={{ src: '.././img/globe.jpg' }} />
+        use:lazy={{ src: '.././img/corona-logo5.jpg' }} />
       <div slot="name">
         <h2>Fertőzöttek száma</h2>
         <h3>{confirmedGlobal}</h3>
@@ -437,7 +437,7 @@
       <img
         slot="logo"
         alt="corona logo"
-        use:lazy={{ src: '.././img/globe.jpg' }} />
+        use:lazy={{ src: '.././img/corona-logo5.jpg' }} />
       <div slot="name">
         <h2>Gyógyult</h2>
         <h3>{recoveredGlobal}</h3>
@@ -447,7 +447,7 @@
       <img
         slot="logo"
         alt="corona logo"
-        use:lazy={{ src: '.././img/globe.jpg' }} />
+        use:lazy={{ src: '.././img/corona-logo5.jpg' }} />
       <div slot="name">
         <h2>Elhunytak</h2>
         <h3>{deathsGlobal}</h3>
