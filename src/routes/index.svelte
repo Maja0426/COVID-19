@@ -84,7 +84,7 @@
       infectedHun = responseHUNCSSE.data.confirmed.value;
       deceasedHun = responseHUNCSSE.data.deaths.value;
       recoveredHun = responseHUNCSSE.data.recovered.value;
-      lastUpdateHun = responseHun.data.lastUpdate;
+      lastUpdateHun = responseHunCSSE.data.lastUpdate;
 
       const responseGlobal = await axios.get(covidGlobalUrl);
       confirmedGlobal = responseGlobal.data.confirmed.value;
