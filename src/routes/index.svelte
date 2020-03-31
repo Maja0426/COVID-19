@@ -84,7 +84,7 @@
       infectedHun = responseHUNCSSE.data.confirmed.value;
       deceasedHun = responseHUNCSSE.data.deaths.value;
       recoveredHun = responseHUNCSSE.data.recovered.value;
-      lastUpdateHun = responseHunCSSE.data.lastUpdate;
+      lastUpdateHun = responseHun.data.lastUpdate;
 
       const responseGlobal = await axios.get(covidGlobalUrl);
       confirmedGlobal = responseGlobal.data.confirmed.value;
@@ -412,10 +412,10 @@
   <h4>
     Forrás:
     <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">
-      Johns Hopkins CSSE,
+      Johns Hopkins CSSE
     </a>
     <a href="https:/koronavirus.gov.hu" target="_blank" rel="noreferrer">
-      koronavirus.gov.hu
+      ,koronavirus.gov.hu
     </a>
   </h4>
 
