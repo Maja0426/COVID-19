@@ -62,6 +62,10 @@
     margin-bottom: 3em;
   }
 
+  p {
+    font-size: 14px;
+  }
+
   /*  iframe {
     display: flex;
     max-width: 100%;
@@ -138,20 +142,33 @@
   <article>
     <h2>COVID-19 igazolt fertőzöttek számának alakulása magyarországon*</h2>
     <Charts
-      comment=" (*Forrás: koronavirus.gov.hu, 03.30-i állapot)"
-      coordinateY={[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360, 390, 420, 450]}
-      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]}
-      perc={[32, 39, 50, 58, 73, 85, 103, 131, 167, 187, 226, 261, 300, 343, 408, 447]} />
+      comment=" (*Forrás: koronavirus.gov.hu, 03. havi állapot)"
+      coordinateY={[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360, 390, 420, 450, 480, 510]}
+      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]}
+      perc={[32, 39, 50, 58, 73, 85, 103, 131, 167, 187, 226, 261, 300, 343, 408, 447, 492]} />
+
+    <Charts
+      comment=" (*Forrás: koronavirus.gov.hu, 04. havi állapot)"
+      coordinateY={[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360, 390, 420, 450, 480, 510, 530]}
+      coordinateX={[01]}
+      perc={[525]} />
     <p>x koordnáta: dátum, y koordináta: megbetegedések száma</p>
   </article>
   <article>
     <h2>COVID-19 vírusfertőzés miatti halálesetek magyarországon*</h2>
     <Charts
       barColor="#222222"
-      comment=" (*Forrás: koronavirus.gov.hu, 03.30-i állapot)"
-      coordinateY={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
-      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]}
-      perc={[1, 1, 1, 1, 1, 4, 4, 6, 8, 9, 10, 10, 10, 11, 13, 15]} />
+      comment=" (*Forrás: koronavirus.gov.hu, 03. havi állapot)"
+      coordinateY={[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]}
+      coordinateX={[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]}
+      perc={[1, 1, 1, 1, 1, 4, 4, 6, 8, 9, 10, 10, 10, 11, 13, 15, 16]} />
+
+    <Charts
+      barColor="#222222"
+      comment=" (*Forrás: koronavirus.gov.hu, 04. havi állapot)"
+      coordinateY={[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]}
+      coordinateX={[01]}
+      perc={[20]} />
     <p>x koordnáta: dátum, y koordináta: halálesetek száma</p>
   </article>
 </section>

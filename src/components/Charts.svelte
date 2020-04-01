@@ -23,7 +23,8 @@
     { year: coordinateX[12], percentage: perc[12] },
     { year: coordinateX[13], percentage: perc[13] },
     { year: coordinateX[14], percentage: perc[14] },
-    { year: coordinateX[15], percentage: perc[15] }
+    { year: coordinateX[15], percentage: perc[15] },
+    { year: coordinateX[16], percentage: perc[16] }
   ];
 
   const xTicks = [...coordinateX];
@@ -60,6 +61,7 @@
     margin: 0.5em auto;
     margin-top: 4em;
     margin-bottom: 4em;
+    overflow-x: auto;
   }
 
   svg {
