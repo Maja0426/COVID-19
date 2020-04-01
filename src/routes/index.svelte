@@ -84,7 +84,7 @@
       infectedHun = responseHUNCSSE.data.confirmed.value;
       deceasedHun = responseHUNCSSE.data.deaths.value;
       recoveredHun = responseHUNCSSE.data.recovered.value;
-      lastUpdateHun = responseHun.data.lastUpdate;
+      lastUpdateHun = responseHUNCSSE.data.lastUpdate;
 
       const responseGlobal = await axios.get(covidGlobalUrl);
       confirmedGlobal = responseGlobal.data.confirmed.value;
@@ -153,6 +153,15 @@
   .news {
     margin: auto;
     margin-top: 3em;
+  }
+
+  .corona-map {
+    margin-top: 3em;
+    border: 1px solid #ccc;
+  }
+
+  .corona-map img {
+    width: 100%;
   }
 
   .card-wrapper h3 {
@@ -418,6 +427,12 @@
       ,koronavirus.gov.hu
     </a>
   </h4>
+
+  <div class="corona-map">
+    <img
+      use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/terkep.png' }}
+      alt="megyénkénti koronavírus statisztika" />
+  </div>
 
   <hr />
   <h2 class="first-h2">fertőzés helyzet világszerte</h2>
