@@ -149,9 +149,9 @@
 
     <Charts
       comment=" (*Forrás: koronavirus.gov.hu, 04. havi állapot)"
-      coordinateY={[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360, 390, 420, 450, 480, 510, 530]}
-      coordinateX={[01]}
-      perc={[525]} />
+      coordinateY={[0, 40, 80, 120, 160, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600, 640, 680]}
+      coordinateX={[01, 02]}
+      perc={[525, 585]} />
     <p>x koordnáta: dátum, y koordináta: megbetegedések száma</p>
   </article>
   <article>
@@ -167,8 +167,8 @@
       barColor="#222222"
       comment=" (*Forrás: koronavirus.gov.hu, 04. havi állapot)"
       coordinateY={[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]}
-      coordinateX={[01]}
-      perc={[20]} />
+      coordinateX={[01, 02]}
+      perc={[20, 21]} />
     <p>x koordnáta: dátum, y koordináta: halálesetek száma</p>
   </article>
 </section>

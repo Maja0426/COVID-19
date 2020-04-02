@@ -174,6 +174,7 @@
 
   .doctors {
     margin-top: 4em;
+    margin-bottom: 6em;
   }
 
   .btn-contact {
@@ -182,6 +183,7 @@
     color: #000;
     border: 2px solid #000;
     transition: 0.3s ease-in-out;
+    border-radius: 50px;
   }
 
   .btn-contact:hover {
@@ -205,6 +207,15 @@
     color: #fff;
     padding: 1em;
     border-radius: 15px;
+  }
+
+  .deaths-log {
+    transition: 0.3s ease-in-out;
+  }
+
+  .deaths-log:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
   }
 
   .cards {
@@ -351,39 +362,10 @@
 </div>
 
 <section>
-  {#if isBlogs}
-    <h2 class="first-h2">legfrissebb cikkeink</h2>
-    <div class="news">
-      <div class="cards">
-        <a rel="prefetch" href="./blog/{posts[0].slug}">
-          <img alt={posts[0].title} use:lazy={{ src: posts[0].thumbnail }} />
-          <div class="date">
-            <h3>{posts[0].title}</h3>
-            <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="cards">
-        <a rel="prefetch" href="./blog/{posts[1].slug}">
-          <img alt={posts[1].title} use:lazy={{ src: posts[1].thumbnail }} />
-          <div class="date">
-            <h3>{posts[1].title}</h3>
-            <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="news">
-      <a href="/blog" class="btn-contact">További cikkek, hírek</a>
-    </div>
-  {/if}
-
   <div class="back doctors">
     <a href="/doctors" class="btn-contact">Háziorvosok elérhetőségei</a>
   </div>
   <hr />
-
   <h2 class="first-h2">fertőzés helyzet magyarországon</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>
   <div class="card-wrapper">
@@ -399,12 +381,17 @@
         <h3>{recoveredHun}</h3>
       </div>
     </Card>
-    <Card>
-      <div slot="name">
-        <h2>Elhunytak</h2>
-        <h3>{deceasedHun}</h3>
-      </div>
-    </Card>
+    <a
+      class="deaths-log"
+      href="https://koronavirus.gov.hu/elhunytak"
+      title="Részletes adatok koronavirus.go.hu">
+      <Card>
+        <div slot="name">
+          <h2>Elhunytak</h2>
+          <h3>{deceasedHun}</h3>
+        </div>
+      </Card>
+    </a>
     <Card>
       <div slot="name">
         <h2>Karanténban</h2>
@@ -472,6 +459,34 @@
   <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">
     <h4>Forrás: Johns Hopkins CSSE</h4>
   </a>
+  <hr />
+  {#if isBlogs}
+    <h2 class="first-h2">legfrissebb cikkeink</h2>
+    <div class="news">
+      <div class="cards">
+        <a rel="prefetch" href="./blog/{posts[0].slug}">
+          <img alt={posts[0].title} use:lazy={{ src: posts[0].thumbnail }} />
+          <div class="date">
+            <h3>{posts[0].title}</h3>
+            <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="cards">
+        <a rel="prefetch" href="./blog/{posts[1].slug}">
+          <img alt={posts[1].title} use:lazy={{ src: posts[1].thumbnail }} />
+          <div class="date">
+            <h3>{posts[1].title}</h3>
+            <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="news">
+      <a href="/blog" class="btn-contact">További cikkek, hírek</a>
+    </div>
+  {/if}
   <hr />
   <article class="gif">
     <h2 class="first-h2">Maradj otthon!</h2>
