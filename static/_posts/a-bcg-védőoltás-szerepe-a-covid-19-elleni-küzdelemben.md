@@ -17,6 +17,6 @@ Szintén korlátozottak az ismereteink arra vonatkozóan, hogy a BCG beadása ut
 
 Dr. Ruppert Mihály
 
-Forrás:[Correlation between universal BCG vaccination policy and reduced morbidity and](https://www.medrxiv.org/content/10.1101/2020.03.24.20042937v1)\
-mortality for COVID-19: an epidemiological study. Aaron Miller, Mac Josh Reandelar, Kimberly Fasciglione, Violeta Roumenova, Yan Li, and Gonzalo H. Otazu\
+Forrás:[Correlation between universal BCG vaccination policy and reduced morbidity and](https://www.medrxiv.org/content/10.1101/2020.03.24.20042937v1)
+mortality for COVID-19: an epidemiological study. Aaron Miller, Mac Josh Reandelar, Kimberly Fasciglione, Violeta Roumenova, Yan Li, and Gonzalo H. Otazu
 doi:https://doi.org/10.1101/2020.03.24.20042937.
