@@ -58,6 +58,26 @@
     font-size: 2.5em;
   }
 
+  .btn-contact {
+    background: transparent;
+    background-image: var(--stripe);
+    color: #000;
+    border: 2px solid #000;
+    transition: 0.3s ease-in-out;
+    border-radius: 50px;
+  }
+
+  .btn-contact:hover {
+    background: var(--main-color);
+    background-image: var(--stripe);
+    color: #fff;
+    border: 2px solid var(--main-color);
+    transition: 0.3s ease-in-out;
+  }
+  .graphs {
+    text-align: center;
+  }
+
   article {
     margin-bottom: 3em;
   }
@@ -171,12 +191,9 @@
       perc={[20, 21]} />
     <p>x koordnáta: dátum, y koordináta: halálesetek száma</p>
   </article>
+  <div class="graphs">
+    <a href="https://haarp.hu/" target="_blank" class="btn-contact">
+      Részletes statisztika
+    </a>
+  </div>
 </section>
-
-<!-- <iframe
-  title="covid-19 statistic"
-  width="95%"
-  height="800px"
-  src="https://haarp.hu/"
-  frameborder="1" />
- -->
