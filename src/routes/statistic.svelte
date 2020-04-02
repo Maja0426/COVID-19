@@ -1,26 +1,5 @@
 <script>
   import Charts from "../components/Charts.svelte";
-  /* import axios from "axios";
-  import { onMount } from "svelte"; */
-
-  /* const covidHunUrl =
-    "https://api.apify.com/v2/datasets/Gm6qjTgGqxkEZTkuJ/items?format=json&clean=1";
-
-  let deceasedHun, recoveredHun, quarantinedHun, testedHun;
-  let infectedHun = [];
-
-  onMount(async function getData() {
-    try {
-      const responseHun = await axios.get(covidHunUrl);
-      infectedHun = infectedHun.data.infected;
-      deceasedHun = responseHun.data.deceased;
-      recoveredHun = responseHun.data.recovered;
-      quarantinedHun = responseHun.data.quarantined;
-      testedHun = responseHun.data.tested;
-    } catch (error) {
-      console.log(error);
-    }
-  }); */
 </script>
 
 <style>
@@ -34,6 +13,28 @@
 
   .main-bg-hero {
     background: url(".././img/chart.png") no-repeat 10% center/cover;
+  }
+
+  .bg-gearbox {
+    background-color: #fff;
+    background-image: var(--stripe);
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 20px auto 20px;
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 3px 3px 16px #ccc;
   }
 
   h3 {
@@ -85,13 +86,6 @@
   p {
     font-size: 14px;
   }
-
-  /*  iframe {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    margin: auto;
-  } */
 
   @media (max-width: 1440px) {
     h1 {
@@ -155,10 +149,13 @@
 <div class="main-bg-hero" id="top">
   <div class="main-title-hero">
     <h1>Statisztikai adatok</h1>
-    <h3>A magyarországi statisztikai adatok grafikonon ábrázolva</h3>
+    <h3>
+      A magyarországi statisztikai adatok grafikonon ábrázolva, az atlatszo.hu
+      oldal alapján
+    </h3>
   </div>
 </div>
-<section>
+<!-- <section>
   <article>
     <h2>COVID-19 igazolt fertőzöttek számának alakulása magyarországon*</h2>
     <Charts
@@ -191,9 +188,141 @@
       perc={[20, 21]} />
     <p>x koordnáta: dátum, y koordináta: halálesetek száma</p>
   </article>
-  <div class="graphs">
-    <a href="https://haarp.hu/" target="_blank" class="btn-contact">
-      Részletes statisztika
+</section> -->
+
+<section>
+  <iframe
+    src="https://public.flourish.studio/visualisation/1566223/embed"
+    frameborder="0"
+    scrolling="no"
+    style="width:100%;height:600px;" />
+  <div style="width:100%!;margin-top:4px!important;text-align:right!important;">
+    <a
+      class="flourish-credit"
+      href="https://public.flourish.studio/visualisation/1566223/?utm_source=embed&utm_campaign=visualisation/1566223"
+      target="_top"
+      style="text-decoration:none!important">
+      <img
+        alt="Made with Flourish"
+        src="https://public.flourish.studio/resources/made_with_flourish.svg"
+        style="width:105px!important;height:16px!important;border:none!important;margin:0!important;" />
     </a>
   </div>
+</section>
+
+<section>
+  <iframe
+    src="https://public.flourish.studio/visualisation/1565451/embed"
+    frameborder="0"
+    scrolling="no"
+    style="width:100%;height:600px;" />
+  <div style="width:100%!;margin-top:4px!important;text-align:right!important;">
+    <a
+      class="flourish-credit"
+      href="https://public.flourish.studio/visualisation/1565451/?utm_source=embed&utm_campaign=visualisation/1565451"
+      target="_top"
+      style="text-decoration:none!important">
+      <img
+        alt="Made with Flourish"
+        src="https://public.flourish.studio/resources/made_with_flourish.svg"
+        style="width:105px!important;height:16px!important;border:none!important;margin:0!important;" />
+    </a>
+  </div>
+</section>
+
+<section>
+  <iframe
+    src="https://public.flourish.studio/visualisation/1565617/embed"
+    frameborder="0"
+    scrolling="no"
+    style="width:100%;height:600px;" />
+  <div style="width:100%!;margin-top:4px!important;text-align:right!important;">
+    <a
+      class="flourish-credit"
+      href="https://public.flourish.studio/visualisation/1565617/?utm_source=embed&utm_campaign=visualisation/1565617"
+      target="_top"
+      style="text-decoration:none!important">
+      <img
+        alt="Made with Flourish"
+        src="https://public.flourish.studio/resources/made_with_flourish.svg"
+        style="width:105px!important;height:16px!important;border:none!important;margin:0!important;" />
+    </a>
+  </div>
+</section>
+
+<section>
+  <iframe
+    src="https://public.flourish.studio/visualisation/1565640/embed"
+    frameborder="0"
+    scrolling="no"
+    style="width:100%;height:600px;" />
+  <div style="width:100%!;margin-top:4px!important;text-align:right!important;">
+    <a
+      class="flourish-credit"
+      href="https://public.flourish.studio/visualisation/1565640/?utm_source=embed&utm_campaign=visualisation/1565640"
+      target="_top"
+      style="text-decoration:none!important">
+      <img
+        alt="Made with Flourish"
+        src="https://public.flourish.studio/resources/made_with_flourish.svg"
+        style="width:105px!important;height:16px!important;border:none!important;margin:0!important;" />
+    </a>
+  </div>
+</section>
+
+<section>
+  <iframe
+    src="https://public.flourish.studio/visualisation/1572904/embed"
+    frameborder="0"
+    scrolling="no"
+    style="width:100%;height:600px;" />
+  <div style="width:100%!;margin-top:4px!important;text-align:right!important;">
+    <a
+      class="flourish-credit"
+      href="https://public.flourish.studio/visualisation/1572904/?utm_source=embed&utm_campaign=visualisation/1572904"
+      target="_top"
+      style="text-decoration:none!important">
+      <img
+        alt="Made with Flourish"
+        src="https://public.flourish.studio/resources/made_with_flourish.svg"
+        style="width:105px!important;height:16px!important;border:none!important;margin:0!important;" />
+    </a>
+  </div>
+</section>
+
+<section>
+  <iframe
+    src="https://public.flourish.studio/visualisation/1591103/embed"
+    frameborder="0"
+    scrolling="no"
+    style="width:100%;height:600px;" />
+  <div style="width:100%!;margin-top:4px!important;text-align:right!important;">
+    <a
+      class="flourish-credit"
+      href="https://public.flourish.studio/visualisation/1591103/?utm_source=embed&utm_campaign=visualisation/1591103"
+      target="_top"
+      style="text-decoration:none!important">
+      <img
+        alt="Made with Flourish"
+        src="https://public.flourish.studio/resources/made_with_flourish.svg"
+        style="width:105px!important;height:16px!important;border:none!important;margin:0!important;" />
+    </a>
+  </div>
+</section>
+
+<section>
+  <ul>
+    <li class=" bg-gearbox ">Adatok forrása</li>
+    <li>
+      <a href="https://atlo.team/koronamonitor/" rel="noreferrer">
+        https://atlo.team/koronamonitor/
+      </a>
+    </li>
+    <li class="bg-gearbox">Adat, grafika, vizualizáció</li>
+    <li>
+      <b>
+        <a href="https://app.flourish.studio/@batorfyattila">Bátorfy Attila</a>
+      </b>
+    </li>
+  </ul>
 </section>
