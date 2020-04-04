@@ -287,7 +287,7 @@
 
 <svelte:head>
   <title>Koronavírus Balassagyarmat | Étel Házhozszállítás</title>
-  <meta property="og:image" content="https://bgykaranten-hu/img/food2.jpg" />
+  <meta property="og:image" content="/img/food2.jpg" />
 </svelte:head>
 
 <div class="main-bg-hero" id="top">
