@@ -316,7 +316,7 @@
         </div>
         <div class="body">
           <a href="tel:+36306616126" class="btn-contact">+36(30)661-6126</a>
-          <a href="tel:+36303301771" class="btn-contact">+36(3)033-01771</a>
+          <a href="tel:+36303301771" class="btn-contact">+36(30)33-01771</a>
           <p>
             HÉTFŐTŐL-CSÜTÖRTÖKIG :10:00-21:00
             <br />
