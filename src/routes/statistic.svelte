@@ -42,10 +42,10 @@
     text-transform: uppercase;
   }
 
-  p {
+  /* p {
     font-size: 20px;
     text-align: center;
-  }
+  } */
 
   .main-title-hero h3 {
     color: #fff;
@@ -54,7 +54,7 @@
     font-weight: 300;
   }
 
-  h2 {
+  /* h2 {
     text-align: center;
     font-size: 2.5em;
   }
@@ -85,7 +85,7 @@
 
   p {
     font-size: 14px;
-  }
+  } */
 
   @media (max-width: 1440px) {
     h1 {
@@ -95,9 +95,9 @@
       font-size: 1.5em;
     }
 
-    h2 {
+    /* h2 {
       font-size: 2em;
-    }
+    } */
   }
 
   @media (max-width: 768px) {
@@ -111,9 +111,9 @@
       font-size: 4em;
     }
 
-    h2 {
+    /* h2 {
       font-size: 20px;
-    }
+    } */
   }
 
   @media (max-width: 420px) {
@@ -130,9 +130,9 @@
       font-size: 3.5em;
     }
 
-    h2 {
+    /* h2 {
       font-size: 1.5em;
-    }
+    } */
   }
 
   @media (max-width: 320px) {
@@ -192,6 +192,7 @@
 
 <section>
   <iframe
+    title="statisstic data"
     src="https://public.flourish.studio/visualisation/1566223/embed"
     frameborder="0"
     scrolling="no"
@@ -212,6 +213,7 @@
 
 <section>
   <iframe
+    title="statisstic data"
     src="https://public.flourish.studio/visualisation/1565451/embed"
     frameborder="0"
     scrolling="no"
@@ -232,6 +234,7 @@
 
 <section>
   <iframe
+    title="statisstic data"
     src="https://public.flourish.studio/visualisation/1565617/embed"
     frameborder="0"
     scrolling="no"
@@ -252,6 +255,7 @@
 
 <section>
   <iframe
+    title="statisstic data"
     src="https://public.flourish.studio/visualisation/1565640/embed"
     frameborder="0"
     scrolling="no"
@@ -272,6 +276,7 @@
 
 <section>
   <iframe
+    title="statisstic data"
     src="https://public.flourish.studio/visualisation/1572904/embed"
     frameborder="0"
     scrolling="no"
@@ -292,6 +297,7 @@
 
 <section>
   <iframe
+    title="statisstic data"
     src="https://public.flourish.studio/visualisation/1591103/embed"
     frameborder="0"
     scrolling="no"

@@ -79,12 +79,12 @@
       const responseHun = await axios.get(covidHunUrl);
       quarantinedHun = responseHun.data.quarantined;
       testedHun = responseHun.data.tested;
+      infectedHun = responseHun.data.infected;
+      recoveredHun = responseHun.data.recovered;
 
       const responseHUNCSSE = await axios.get(covidHUNCSSE);
-      infectedHun = responseHUNCSSE.data.confirmed.value;
       deceasedHun = responseHUNCSSE.data.deaths.value;
-      recoveredHun = responseHUNCSSE.data.recovered.value;
-      lastUpdateHun = responseHUNCSSE.data.lastUpdate;
+      lastUpdateHun = responseHun.data.lastUpdatedAtApify;
 
       const responseGlobal = await axios.get(covidGlobalUrl);
       confirmedGlobal = responseGlobal.data.confirmed.value;
@@ -417,7 +417,7 @@
 
   <div class="corona-map">
     <img
-      use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/covid19_0403.png' }}
+      use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/terkep0404.jpg' }}
       alt="megyénkénti koronavírus statisztika" />
   </div>
 
