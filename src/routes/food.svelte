@@ -286,8 +286,8 @@
 </style>
 
 <svelte:head>
-  <title>Koronavírus Balassagyarmat | Étel Házhozszállítás</title>
-  <meta property="og:image" content="/img/food2.jpg" />
+  <title>Koronavírus Balassagyarmat | Rendelés - Házhozszállítás</title>
+  <meta property="og:image" content="./img/food2.jpg" />
 </svelte:head>
 
 <div class="main-bg-hero" id="top">
