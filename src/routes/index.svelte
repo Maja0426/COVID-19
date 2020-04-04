@@ -290,6 +290,10 @@
   }
 
   @media (max-width: 420px) {
+    section {
+      padding-top: 1em;
+    }
+
     .main-bg-hero {
       height: 70vh;
     }
