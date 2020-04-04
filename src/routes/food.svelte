@@ -206,15 +206,15 @@
     .main-title-hero h3 {
       font-size: 1.5em;
     }
-  
+  }
+
   @media (max-width: 1280px) {
-      .btn-contact {
+    .btn-contact {
       padding: 0.7em 1em;
     }
   }
 
   @media (max-width: 1024px) {
-
     .row-wrapper {
       flex-direction: column;
       width: 100%;
