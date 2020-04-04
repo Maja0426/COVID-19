@@ -102,24 +102,20 @@
   <ul>
 
     <ul>
-      <li class=" bg-gearbox ">
-        Dr. Spruch Rezső (2020.04.01-ig helyettesíti Dr. Tassi Gábor)
-      </li>
+      <li class=" bg-gearbox ">Dr. Spruch Rezső</li>
       <li>
-        <a href="tel:+3680620011" class="btn-contact">
-          recept felírás (80)620-011
+        <a href="tel:+3635310493" class="btn-contact">
+          recept felírás (35)310-493
         </a>
       </li>
       <li>
-        <a class="btn-contact" href="tel:+36301451389">
-          koronavírus tünet (30)145-1389
+        <a class="btn-contact" href="tel:+36204957746">
+          koronavírus tünet (20)495-7746
         </a>
       </li>
     </ul>
 
-    <li class=" bg-gearbox ">
-      Dr. Kubassek Péter (2020.03.29-ig helyettesíti: Dr. Kenéz Katalin))
-    </li>
+    <li class=" bg-gearbox ">Dr. Kubassek Péter</li>
     <li>
       <a href="tel:+3635300053" class="btn-contact">
         recept felírás (35)300-053
