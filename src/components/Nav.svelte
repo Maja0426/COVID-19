@@ -32,9 +32,11 @@
   }
 
   .nav-links a:hover {
-    background: #222;
-    color: #fff;
-    transition: 0.3s all ease-in;
+    background: #fff;
+    background-image: var(--stripe);
+    color: #000;
+    border-radius: 5px;
+    transition: 0.2s all ease-in;
   }
 
   .nav-links,
@@ -52,7 +54,9 @@
     text-decoration: none;
     padding: 13px 0.8em;
     font-size: 16px;
-    transition: 0.3s all ease-in;
+    transition: 0.2s all ease-in;
+    margin: 0 0.2em;
+    border-radius: 5px;
   }
 
   .logo {
@@ -88,9 +92,10 @@
   }
 
   .selected {
-    background: #222;
+    background: #fff;
     background-image: var(--stripe);
-    color: #fff;
+    color: #000;
+    border-radius: 5px;
   }
 
   @media (max-width: 768px) {
@@ -226,7 +231,7 @@
         on:click={() => {
           menu = false;
         }}
-        class={segment === 'statistic' ? 'doctors' : ''}
+        class={segment === 'doctors' ? 'selected' : ''}
         href="doctors">
         Háziorvosi ügyelet
       </a>
@@ -236,9 +241,19 @@
         on:click={() => {
           menu = false;
         }}
-        class={segment === 'statistic' ? 'dentists' : ''}
+        class={segment === 'dentists' ? 'selected' : ''}
         href="dentists">
         Fogovosi ügyelet
+      </a>
+    </li>
+    <li>
+      <a
+        on:click={() => {
+          menu = false;
+        }}
+        class={segment === 'food' ? 'selected' : ''}
+        href="food">
+        Házhozszállítás
       </a>
     </li>
     <!-- <li>

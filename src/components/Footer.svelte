@@ -89,6 +89,10 @@
     text-decoration: underline;
   }
 
+  .logos img {
+    width: 250px;
+  }
+
   .text {
     display: flex;
     flex-direction: column;
@@ -140,7 +144,7 @@
   <div class="main-sub-footer">
     <div class="col">
       <div class="logos">
-        <img src="../img/wash-hands2.png" alt="wash hands graphic" />
+        <img src="../img/maradjotthon.jpg" alt="maradj otthon plakát" />
       </div>
     </div>
     <div class="col">
@@ -170,7 +174,7 @@
     </div>
     <div class="col">
       <div class="logos">
-        <img src="../img/sope.png" alt="soap graphic" />
+        <img src="../img/kijarasi.jpg" alt="kijárási korlátozás plakát" />
       </div>
     </div>
   </div>
@@ -178,10 +182,10 @@
   <div class="sub-footer-links">
     <p class="face-logo">
       <a
-        href="https://www.facebook.com/groups/Karanten/"
+        href="https://www.facebook.com/smartbeeweb"
         target="_blank"
         rel="noreferrer"
-        title="Karantén-Balassagyarmat">
+        title="Smartbee Web Balassagyarmat">
         <img src="../img/facebook.svg" alt="facebook logo" />
       </a>
     </p>
