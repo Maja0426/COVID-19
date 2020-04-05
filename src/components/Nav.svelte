@@ -55,7 +55,7 @@
     padding: 13px 0.8em;
     font-size: 16px;
     transition: 0.2s all ease-in;
-    margin: 0 0.2em;
+    margin: 0 0.1em;
     border-radius: 5px;
   }
 
@@ -96,6 +96,15 @@
     background-image: var(--stripe);
     color: #000;
     border-radius: 5px;
+  }
+
+  @media (max-width: 1024px) {
+    .nav-links li a {
+      text-decoration: none;
+      padding: 7px 0.4em;
+      font-size: 15px;
+      margin: 0 0.1em;
+    }
   }
 
   @media (max-width: 768px) {

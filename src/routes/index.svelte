@@ -201,14 +201,6 @@
     flex-direction: row;
   }
 
-  .home {
-    background: #c31f09;
-    background-image: var(--stripe);
-    color: #fff;
-    padding: 1em;
-    border-radius: 15px;
-  }
-
   .deaths-log {
     transition: 0.3s ease-in-out;
   }
@@ -249,6 +241,15 @@
 
   .date p {
     margin: 0;
+  }
+
+  .home {
+    background: #c31f09;
+    background-image: var(--stripe);
+    color: #fff;
+    padding: 1em;
+    border-radius: 15px;
+    margin: auto;
   }
 
   .donate {

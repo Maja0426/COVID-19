@@ -49,7 +49,7 @@
 <style>
   section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 4em 10%;
     flex-wrap: wrap;
   }
@@ -78,7 +78,7 @@
     margin-top: 2em;
   }
 
-  .cards {
+  .card {
     width: 45%;
     display: flex;
     flex-direction: row;
@@ -91,6 +91,8 @@
 
   .row-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .title {
@@ -113,7 +115,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-width: 200px;
+    /* min-width: 200px; */
     background: #fff;
     color: #222;
   }
@@ -132,23 +134,17 @@
     filter: grayscale(1);
   }
 
-  .image,
+  /*  .image,
   .body {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   img {
     min-width: 100px;
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
-  }
-
-  h3,
-  h1 {
-    text-align: center;
-    padding: 0.5em;
   }
 
   .btn-contact {
@@ -199,6 +195,37 @@
     margin: auto;
   }
 
+  .home {
+    margin-top: -3em;
+    background: #444;
+    background-image: var(--stripe);
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0;
+    text-align: center;
+    padding: 1em;
+    line-height: 1.8;
+  }
+
+  .home a {
+    background: #f9e830;
+    padding: 0.2em 0.3em;
+    color: #000;
+    transition: 0.2s ease-in-out;
+  }
+
+  .home a:hover {
+    background: #000;
+    padding: 0.2em 0.3em;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+  }
+
+  .modal h3 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
   @media (max-width: 1440px) {
     h1 {
       font-size: 5em;
@@ -217,10 +244,10 @@
   @media (max-width: 1024px) {
     .row-wrapper {
       flex-direction: column;
-      width: 100%;
+      /* width: 100%; */
     }
 
-    .cards {
+    .card {
       margin: 1em;
       padding: 0;
     }
@@ -235,13 +262,8 @@
       padding: 0.7em;
     }
 
-    .row-wrapper {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .cards {
-      margin: 0.5em;
+    .card {
+      margin: 0.5em 0.5em 3em;
       padding: 0;
     }
 
@@ -254,9 +276,9 @@
     section {
       padding: 4em 1em;
     }
-
-    .cards {
+    .card {
       width: 100%;
+      margin: 0 0 3em;
     }
 
     h3 {
@@ -270,9 +292,13 @@
     h1 {
       font-size: 3.5em;
     }
+
+    .home {
+      font-size: 18px;
+    }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 360px) {
     section {
       padding: 4em 0.5em;
     }
@@ -294,7 +320,7 @@
   <div class="main-title-hero">
     <h1>ÉTEL RENDELÉS</h1>
     <h3>
-      Honnan, mikor, milyen kaját tudsz rendelni, milyen módon, egyéb infók
+      Honnan, mikor, milyen kaját tudsz rendelni, milyen módon, infók
       rendeléssel, házhozszállítással kapcsolatban.
     </h3>
   </div>
@@ -303,7 +329,7 @@
 <h2 class="first-h2">Bővebb információért kattints az étterem logójára!</h2>
 
 <section>
-  <div class="cards">
+  <div class="card">
     <div class="col-wrapper">
       <div class="title">
         <h2>Art Cafe</h2>
@@ -329,14 +355,14 @@
     </div>
   </div>
 
-  <div class="cards">
+  <div class="card">
     <div class="col-wrapper">
       <div class="title">
         <h2>Excalibur étterem</h2>
       </div>
       <div class="row-wrapper">
         <div class="image" on:click={() => openModal('excalibur')}>
-          <img alt="dgs" use:lazy={{ src: '../img/noimage.jpg' }} />
+          <img alt="no image logo" use:lazy={{ src: '../img/noimage.jpg' }} />
         </div>
         <div class="body">
           <a href="tel:+36202943900" class="btn-contact">+36(20)294-3900</a>
@@ -355,57 +381,82 @@
 
 </section>
 
+<section>
+  <h2 class="home">
+    Nem találod magad a listán? Van nálatok is házhoz szállítás és szeretnéd
+    hogy mások is tudjanak róla? Ebben az esetben jelezhetsz a
+    <br />
+    <a href="mailto:develop.tmsmajoros@gmail.com">
+      develop.tmsmajoros@gmail.com
+    </a>
+    <br />
+    címen vagy kereshetsz a
+    <br />
+    <a href="tel:06302224973">06(30)222-4973</a>
+    <br />
+    telefonszámon is.
+  </h2>
+</section>
+
 <!--            MODAL            -->
 
-{#if open === 'artcafe'}
-  <Modal title="Információ" on:cancel={cancel}>
-    <h3>
-      Balassagyarmaton ingyenes a kiszállítas, a többi településre 3
-      ételrendelés plusz útiköltseggel tudunk kiszállítani.
-    </h3>
-    <ul>
-      <li>Patvarc : 500ft</li>
-      <li>Szügy : 500ft</li>
-      <li>Őrhalom : 800ft</li>
-      <li>Hugyag : 1000ft</li>
-      <li>Mohora: 1000ft</li>
-      <li>Nyírjes : 400ft</li>
-      <li>Gyárak : 400ft</li>
-      <li>Ipolyszög : 500ft</li>
-      <li>Ipolyvece : 1200ft</li>
-      <li>Érsekvadkert: 1200ft</li>
-      <li>Dejtár : 1000ft</li>
-      <li>Szlovákgyarmat : 300ft</li>
-    </ul>
-    <h3>Fizetési lehetőség: a futárnál készpénzzel, illetve bankkártyával:</h3>
-    <button class="modal-btn">
-      <a
-        href="https://www.telepocak.hu/menu-art-cafe"
-        target="_blank"
-        rel="noreferrer">
-        telepocak
-      </a>
-    </button>
-    <div slot="footer">
-      <button on:click={cancel}>Bezár</button>
-    </div>
-  </Modal>
-{:else if open === 'excalibur'}
-  <Modal title="Információ" on:cancel={cancel}>
-    <h3>Excalibur étterem 2660 Balassagyarmat Teleki 2.</h3>
-    <p>Bővebb információk:</p>
-    <button class="modal-btn">
-      <a href="http://bgyebed.hu/" target="_blank" rel="noreferrer">
-        bgyebed.hu
-      </a>
-    </button>
-    <button class="modal-btn">
-      <a href="http://bgypizza.hu/" target="_blank" rel="noreferrer">
-        bgypizza.hu
-      </a>
-    </button>
-    <div slot="footer">
-      <button on:click={cancel}>Bezár</button>
-    </div>
-  </Modal>
-{/if}
+<div class="modal">
+  {#if open === 'artcafe'}
+    <Modal title="Információ" on:cancel={cancel}>
+      <h3>
+        Balassagyarmaton ingyenes a kiszállítás, a többi településre 3
+        ételrendelés plusz útiköltséggel tudunk kiszállítani.
+      </h3>
+      <img
+        alt="no image logo"
+        use:lazy={{ src: '../shops/artcafepizza.jpg' }} />
+      <ul>
+        <li>Patvarc : 500ft</li>
+        <li>Szügy : 500ft</li>
+        <li>Őrhalom : 800ft</li>
+        <li>Hugyag : 1000ft</li>
+        <li>Mohora: 1000ft</li>
+        <li>Nyírjes : 400ft</li>
+        <li>Gyárak : 400ft</li>
+        <li>Ipolyszög : 500ft</li>
+        <li>Ipolyvece : 1200ft</li>
+        <li>Érsekvadkert: 1200ft</li>
+        <li>Dejtár : 1000ft</li>
+        <li>Szlovákgyarmat : 300ft</li>
+      </ul>
+      <h3>
+        Fizetési lehetőség: a futárnál készpénzzel, illetve bankkártyával:
+      </h3>
+      <button class="modal-btn">
+        <a
+          href="https://www.telepocak.hu/menu-art-cafe"
+          target="_blank"
+          rel="noreferrer">
+          telepocak
+        </a>
+      </button>
+      <div slot="footer">
+        <button on:click={cancel}>Bezár</button>
+      </div>
+    </Modal>
+  {:else if open === 'excalibur'}
+    <Modal title="Információ" on:cancel={cancel}>
+      <h3>Excalibur étterem 2660 Balassagyarmat Teleki 2.</h3>
+      <img alt="no image logo" use:lazy={{ src: '../shops/bgyebed.jpg' }} />
+      <p>Bővebb információk:</p>
+      <button class="modal-btn">
+        <a href="http://bgyebed.hu/" target="_blank" rel="noreferrer">
+          bgyebed.hu
+        </a>
+      </button>
+      <button class="modal-btn">
+        <a href="http://bgypizza.hu/" target="_blank" rel="noreferrer">
+          bgypizza.hu
+        </a>
+      </button>
+      <div slot="footer">
+        <button on:click={cancel}>Bezár</button>
+      </div>
+    </Modal>
+  {/if}
+</div>
