@@ -371,6 +371,34 @@
     <a href="/doctors" class="btn-contact">Háziorvosok elérhetőségei</a>
   </div>
   <hr />
+  {#if isBlogs}
+    <h2 class="first-h2">legfrissebb cikkeink</h2>
+    <div class="news">
+      <div class="cards">
+        <a rel="prefetch" href="./blog/{posts[0].slug}">
+          <img alt={posts[0].title} use:lazy={{ src: posts[0].thumbnail }} />
+          <div class="date">
+            <h3>{posts[0].title}</h3>
+            <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="cards">
+        <a rel="prefetch" href="./blog/{posts[1].slug}">
+          <img alt={posts[1].title} use:lazy={{ src: posts[1].thumbnail }} />
+          <div class="date">
+            <h3>{posts[1].title}</h3>
+            <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="news">
+      <a href="/blog" class="btn-contact">További cikkek, hírek</a>
+    </div>
+  {/if}
+  <hr />
   <h2 class="first-h2">fertőzés helyzet magyarországon</h2>
   <h3>Utolsó frissítés dátuma: {moment(lastUpdateHun).format('lll')}</h3>
   <div class="card-wrapper">
@@ -464,34 +492,6 @@
   <a href="https://systems.jhu.edu/" target="_blank" rel="noreferrer">
     <h4>Forrás: Johns Hopkins CSSE</h4>
   </a>
-  <hr />
-  {#if isBlogs}
-    <h2 class="first-h2">legfrissebb cikkeink</h2>
-    <div class="news">
-      <div class="cards">
-        <a rel="prefetch" href="./blog/{posts[0].slug}">
-          <img alt={posts[0].title} use:lazy={{ src: posts[0].thumbnail }} />
-          <div class="date">
-            <h3>{posts[0].title}</h3>
-            <p>Közzétéve: {moment(posts[0].date).format('ll')}</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="cards">
-        <a rel="prefetch" href="./blog/{posts[1].slug}">
-          <img alt={posts[1].title} use:lazy={{ src: posts[1].thumbnail }} />
-          <div class="date">
-            <h3>{posts[1].title}</h3>
-            <p>Közzétéve: {moment(posts[1].date).format('ll')}</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="news">
-      <a href="/blog" class="btn-contact">További cikkek, hírek</a>
-    </div>
-  {/if}
   <hr />
   <article class="gif">
     <h2 class="first-h2">Maradj otthon!</h2>

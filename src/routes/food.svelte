@@ -398,7 +398,7 @@
   </h2>
 </section>
 
-<!--            MODAL            -->
+<!----------------------------- MODAL---------------------------------->
 
 <div class="modal">
   {#if open === 'artcafe'}
@@ -425,7 +425,8 @@
         <li>Szlovákgyarmat : 300ft</li>
       </ul>
       <h3>
-        Fizetési lehetőség: a futárnál készpénzzel, illetve bankkártyával:
+        Fizetési lehetőség: a futárnál készpénzzel, illetve telepocak-on
+        keresztül bankkártyával:
       </h3>
       <button class="modal-btn">
         <a
