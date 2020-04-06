@@ -450,7 +450,7 @@
 
   <div class="corona-map">
     <img
-      use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/terkep0405.jpg' }}
+      use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/terkep0406.jpg' }}
       alt="megyénkénti koronavírus statisztika" />
   </div>
 
