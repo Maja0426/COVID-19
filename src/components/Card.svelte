@@ -44,7 +44,7 @@
     background: #fff;
     color: #000;
     margin: 1em;
-    box-shadow: 2px 2px 5px #222;
+    box-shadow: 5px 5px 5px #b3b0b0;
   }
 
   .card img {

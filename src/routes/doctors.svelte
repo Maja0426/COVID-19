@@ -14,11 +14,27 @@
     padding-top: 8em;
   }
 
+  .btn-contact {
+    background: #fff;
+    background-image: var(--stripe);
+    border: none;
+    box-shadow: 5px 5px 5px #b3b0b0;
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+  }
+
+  .btn-contact:hover {
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #f1ecec;
+  }
+
   li {
     text-align: center;
     margin: 3em 0;
-    /* padding: 10px;
-    font-size: 18px; */
+    padding: 10px 0;
   }
 
   h2 {
@@ -30,6 +46,10 @@
   h3 {
     text-align: center;
     margin-top: 1em;
+  }
+
+  .important-text {
+    margin-top: 4em;
   }
 
   ul {
@@ -49,7 +69,13 @@
 
     .btn-contact {
       background-image: var(--stripe);
-      border-radius: 5px;
+      border-radius: 50px;
+      box-shadow: 5px 5px 5px #b3b0b0;
+      font-weight: bold;
+    }
+
+    li {
+      margin-bottom: 1em;
     }
   }
 
@@ -99,22 +125,22 @@
       </a>
     </li>
   </ul>
+
   <ul>
+    <li class=" bg-gearbox ">Dr. Spruch Rezső</li>
+    <li>
+      <a href="tel:+3635310493" class="btn-contact">
+        recept felírás (35)310-493
+      </a>
+    </li>
+    <li>
+      <a class="btn-contact" href="tel:+36204957746">
+        koronavírus tünet (20)495-7746
+      </a>
+    </li>
+  </ul>
 
-    <ul>
-      <li class=" bg-gearbox ">Dr. Spruch Rezső</li>
-      <li>
-        <a href="tel:+3635310493" class="btn-contact">
-          recept felírás (35)310-493
-        </a>
-      </li>
-      <li>
-        <a class="btn-contact" href="tel:+36204957746">
-          koronavírus tünet (20)495-7746
-        </a>
-      </li>
-    </ul>
-
+  <ul>
     <li class=" bg-gearbox ">Dr. Kubassek Péter</li>
     <li>
       <a href="tel:+3635300053" class="btn-contact">
@@ -186,7 +212,7 @@
     </li>
   </ul>
 
-  <h3>
+  <h3 class="important-text">
     A vonalak leterheltsége miatt kérjük türelmüket és köszönjük megértésüket!
   </h3>
 </section>

@@ -178,20 +178,20 @@
   }
 
   .btn-contact {
-    background: transparent;
+    background: #000;
+    border: 1px solid #000;
     background-image: var(--stripe);
-    color: #000;
-    border: 2px solid #000;
+    color: #fff;
     transition: 0.3s ease-in-out;
-    border-radius: 50px;
   }
 
   .btn-contact:hover {
-    background: var(--main-color);
+    background: transparent;
+    border: 1px solid #f1ecec;
     background-image: var(--stripe);
-    color: #fff;
-    border: 2px solid var(--main-color);
+    color: #000;
     transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px #b3b0b0;
   }
 
   .news {

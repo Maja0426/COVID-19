@@ -153,13 +153,15 @@ hr {
   color: #000;
   border: 2px solid #000;
   text-transform: uppercase;
-  padding: 1em 2em;
+  padding: 1.5em 2em;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-contact:hover {
   background: #000;
   color: #fff;
   border: 2px solid #000;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1024px) {

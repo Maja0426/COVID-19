@@ -45,7 +45,7 @@
   h1 {
     text-align: center;
     font-size: 2.5em;
-    margin-top: 1.5em;
+    margin: 1.5em auto 0.5em;
   }
 
   /* .date {
