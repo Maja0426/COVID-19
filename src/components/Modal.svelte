@@ -1,7 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { fly, fade } from "svelte/transition";
-  /* import Button from "./Button.svelte"; */
 
   export let title;
 
@@ -25,14 +24,13 @@
 
   .modal {
     position: fixed;
-    top: 10vh;
-    left: 10%;
-    width: 80%;
+    top: 15vh;
+    left: 5%;
+    width: 90%;
     max-height: 80vh;
     background: white;
-    border-radius: 5px;
+    /* background-image: var(--stripe); */
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     overflow: auto;
   }
 

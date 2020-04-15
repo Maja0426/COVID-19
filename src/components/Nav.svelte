@@ -35,7 +35,6 @@
     background: #fff;
     background-image: var(--stripe);
     color: #000;
-    border-radius: 5px;
     transition: 0.2s all ease-in;
   }
 
@@ -56,7 +55,6 @@
     font-size: 16px;
     transition: 0.2s all ease-in;
     margin: 0 0.1em;
-    border-radius: 5px;
   }
 
   .logo {
@@ -95,7 +93,6 @@
     background: #fff;
     background-image: var(--stripe);
     color: #000;
-    border-radius: 5px;
   }
 
   @media (max-width: 1024px) {
