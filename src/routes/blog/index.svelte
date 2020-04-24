@@ -54,8 +54,13 @@
     flex-wrap: wrap;
   }
 
+  .main-bg-hero {
+    background: url("../img/news.jpg") no-repeat center/cover;
+  }
+
   h1 {
     font-size: 6em;
+    padding: 0px;
     text-align: center;
     margin: 0 auto 0.5em;
     font-weight: 400;
@@ -68,10 +73,6 @@
     font-size: 1.7em;
     font-weight: 300;
     text-transform: uppercase;
-  }
-
-  .main-bg-hero {
-    background: url("../img/news.jpg") no-repeat center/cover;
   }
 
   .wrapper {
@@ -112,8 +113,7 @@
     object-fit: cover;
   }
 
-  h3,
-  h1 {
+  .body h3 {
     text-align: center;
     padding: 0.5em;
   }

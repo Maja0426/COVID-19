@@ -102,12 +102,12 @@
     background: url(".././img/covid-wallpaper.png") no-repeat 10% center/cover;
   }
 
-  .main-title-hero {
-    display: flex;
-    flex-direction: column;
-    padding: 0 5%;
-    opacity: 1;
-    margin-top: 100px;
+  .main-title-hero h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 
   h1 {
@@ -133,14 +133,6 @@
 
   p {
     font-size: 20px;
-  }
-
-  .main-title-hero h3 {
-    color: #fff;
-    text-align: center;
-    font-size: 1.7em;
-    font-weight: 300;
-    text-transform: uppercase;
   }
 
   .card-wrapper h2 {
@@ -354,11 +346,7 @@
 
 <div class="main-bg-hero" id="top">
   <div class="main-title-hero">
-    <h1>
-      KARANTÉN
-      <br />
-      BGYARMAT
-    </h1>
+    <h1>KARANTÉN BGYARMAT</h1>
     <h3>
       koronavírussal (COVID-19) kapcsolatos tájékoztató oldal (nem csak)
       balassagyarmatiak számára
@@ -450,7 +438,7 @@
 
   <div class="corona-map">
     <img
-      use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/terkep0423.jpg' }}
+      use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/terkep0424.jpg' }}
       alt="megyénkénti koronavírus statisztika" />
   </div>
 
