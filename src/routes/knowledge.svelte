@@ -60,7 +60,7 @@
     padding-bottom: 0;
   } */
 
-  .controls {
+  /* .controls {
     position: absolute;
     top: 0;
     width: 100%;
@@ -78,7 +78,6 @@
     color: #000;
     font-size: 0.9em;
     background: #fff;
-    /* opacity: 0.7; */
     border: 1px solid #fff;
     border-radius: 15px;
   }
@@ -86,12 +85,12 @@
   .time {
     width: 3em;
   }
-
-  .time:last-child {
+ */
+  /* .time:last-child {
     text-align: right;
-  }
+  } */
 
-  progress {
+  /* progress {
     display: block;
     width: 100%;
     height: 10px;
@@ -109,7 +108,7 @@
 
   video {
     width: 100%;
-  }
+  } */
   /*===================7*/
   h1 {
     font-size: 6em;
@@ -135,10 +134,6 @@
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 1em;
-  }
-
-  h3 ul li {
-    line-height: 1.6;
   }
 
   .container {
@@ -186,6 +181,16 @@
     border-radius: 100%;
   }
 
+  .tudastar-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tudastar-img img {
+    max-width: 600px;
+  }
+
+
   @media (max-width: 1440px) {
     h1 {
       font-size: 5em;
@@ -230,9 +235,9 @@
     .sub-title {
       font-size: 1.8em;
     }
-    span {
+    /* span {
       font-size: 0.8em;
-    }
+    } */
 
     h3 {
       font-size: 16px;
@@ -245,6 +250,10 @@
     h1 {
       font-size: 3.5em;
     }
+
+    .tudastar-img img {
+    max-width: 300px;
+  }
   }
 
   @media (max-width: 320px) {
@@ -252,9 +261,9 @@
       font-size: 3em;
     }
 
-    span {
+    /* span {
       font-size: 0.5em;
-    }
+    } */
   }
 </style>
 
@@ -269,7 +278,7 @@
   </div>
 </div>
 
-<section>
+<!-- <section>
   <h2 class="sub-title">
     Új tájékoztató videó a koronavírus elleni védekezésről
   </h2>
@@ -296,7 +305,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section>
   <h2 class="sub-title">Gyakran ismételt kérdések*</h2>
@@ -396,9 +405,7 @@
     <div class="text-container">
       <h3>Van-e védőoltás az új koronavírus ellen?</h3>
       <p>
-        A koronavírusok, így az új koronavírus ellen nincs védőoltás. Az új
-        koronavírus esetében megkezdődött a vakcinafejlesztés, a védőoltás
-        előállítása akár egy-másfél évig is eltarthat.
+        Jelenleg több gyártó különböző technológiákon alapuló oltása is engedélyezett, illetve engedélyezés alatt áll. Magyarországon jelenleg a <b>Pfizer-BionTech</b>, a <b>Moderna</b>, az  <b>AstraZeneca</b>, a <b>Sputnik V</b> és a <b>Sinopharm</b> vakcinái engedélyezettek.
       </p>
     </div>
   </div>
@@ -432,7 +439,7 @@
       <h3>A gyerekeket is érinti az új koronavírus okozta megbetegedés?</h3>
       <p>
         A vírussal bármilyen életkorú ember megfertőződhet, az eddig igazolt
-        esetek között alig volt gyermekkorú beteg, aki betegsége enyhe lefolyású
+        esetek között volt gyermekkorú beteg, aki betegsége enyhe lefolyású
         volt.
       </p>
     </div>
@@ -532,20 +539,6 @@
       <img src="../img/corona-logo.jpg" alt="covid19 logo" />
     </div>
     <div class="text-container">
-      <h3>Van-e lehetőség az új koronavírusra szűrővizsgálatot végeztetni?</h3>
-      <p>
-        Nincs. Jelenleg kizárólag akkor végezhető laboratóriumi kivizsgálás, ha
-        a jellemző tünetek mutatkoznak, és a járványtani kockázat is fennáll.
-        Tünetmentes emberek szűrővizsgálata, tesztelése nem indokolt.
-      </p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="logo-container">
-      <img src="../img/corona-logo.jpg" alt="covid19 logo" />
-    </div>
-    <div class="text-container">
       <h3>Várandós vagyok, mit tegyek a megelőzés érdekében?</h3>
       <p>
         Tartsa be a normál higiéniai rendszabályokat, ami influenza-szezonban
@@ -579,48 +572,7 @@
 </section>
 
 <section>
-  <h2 class="sub-title">Mikor kell maszkot használni*</h2>
-
-  <ul>
-    <li>
-      Ha Ön egészséges, csak akkor kell maszkot viselnie, ha olyan személlyel
-      kerül kapcsolatba aki 2019-nCoV fertőzésgyanús.
-    </li>
-    <li>Viseljen maszkot, ha köhög és/vagy tüsszög.</li>
-    <li>
-      A maszkok csak akkor hatásosak, ha alkoholos alapú kézfertőtlenítő
-      használatával vagy szappannal és vízzel történő gyakori kézmosással
-      kombinálják.
-    </li>
-    <li>
-      Ha maszkot visel, akkor tudnia kell hogyan kell használni és hogyan kell
-      megfelelő módon ártalmatlanítani.
-    </li>
-    <li>
-      A maszk felhelyezése előtt tisztítsa meg a kezét alkoholos
-      kézfertőtlenítővel vagy alapos szappanos kézmosással.
-    </li>
-    <li>
-      Fedje le a száját és az orrát maszkkal, és ellenőrizze, hogy nincs-e hézag
-      az arc és a maszk között.
-    </li>
-    <li>
-      Használat közben ne érintse meg a maszkot; ha igen, tisztítsa meg a kezét
-      alkoholos kézfertítlenítővel vagy alapos szappanos kézmosással.
-    </li>
-    <li>
-      Cserélje ki a maszkot egy újra, amint nedvessé válik és ne használja újra
-      az egyszer használatos maszkokat.
-    </li>
-    <li>
-      A maszk eltávolításához: vegye le hátulról (ne érintse meg a maszk
-      elejét); azonnal dobja el egy zárt szemetesbe; tisztítsa meg a kezét
-      alkoholos kézferőtlenítővel vagy alapos szappanos kézmosással.
-    </li>
-  </ul>
-  *Forrás:
-  <a
-    href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks">
-    WHO
-  </a>
+  <div class="tudastar-img">
+  <img src="../img/maszkhasznalat.jpg" alt="kötelező maszkhasználatról plakát">
+  </div>
 </section>

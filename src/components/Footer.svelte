@@ -46,6 +46,19 @@
     width: 48px;
   }
 
+  hr {
+    all: initial;
+    background-color: #02a3dd;
+    height: 1px;
+    width: 50%;
+    margin: 0 auto;
+    margin: 0 auto;
+  }
+
+  hr:nth-of-type(2) {
+    margin-bottom: 50px;
+  }
+
   .sub-footer-links a {
     display: inline-block;
     text-decoration: none;
@@ -76,7 +89,7 @@
     flex-direction: column;
     width: 100%;
     background: #222;
-    padding: 2% 0;
+    padding: 20px 0;
   }
 
   .smartbee-footer a {
@@ -90,7 +103,7 @@
   }
 
   .logos img {
-    width: 250px;
+    width: 350px;
   }
 
   .text {
@@ -122,6 +135,10 @@
       width: 90%;
     }
 
+    .logos img {
+    width: 350px;
+  }
+
     .col a {
       width: 70vw;
     }
@@ -132,6 +149,10 @@
       flex-direction: row;
     }
 
+    .logos img {
+    width: 300px;
+  }
+
     .smartbee-footer h5 {
       font-size: 16px;
       padding: 0 10px;
@@ -141,10 +162,11 @@
 </style>
 
 <section class="footer">
+
   <div class="main-sub-footer">
     <div class="col">
       <div class="logos">
-        <img src="../img/maradjotthon.jpg" alt="maradj otthon plakát" />
+        <img src="../img/vigyazzunk2.jpg" alt="vigyázzunk egymásra plakát" />
       </div>
     </div>
     <div class="col">
@@ -170,13 +192,19 @@
             NNK - Nemzeti Népegészségügyi Központ
           </a>
         </p>
+        <p>
+          <a href="https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/how-do-vaccines-work_hu" target="_blank" rel="noreferrer">
+            Hogyan hatnak a védőoltások?
+          </a>
+        </p>
       </div>
     </div>
     <div class="col">
       <div class="logos">
-        <img src="../img/kijarasi.jpg" alt="kijárási korlátozás plakát" />
+        <img src="../img/reg_javitas.jpg" alt="elrontott oltási regisztráció javítási lehetőségéről plakát" />
       </div>
     </div>
+
   </div>
 
   <div class="sub-footer-links">
@@ -200,7 +228,7 @@
       <a href="cooky" rel="noreferrer">Sütik</a>
     </p>
   </div>
-
+<hr>
   <div class="smartbee-footer">
     <div class="text">
       <h5>
@@ -216,4 +244,5 @@
       </h5>
     </div>
   </div>
+  <hr>
 </section>

@@ -49,7 +49,9 @@
   }
 
   .important-text {
+    text-transform: uppercase;
     margin-top: 4em;
+    font-size: 2rem;
   }
 
   ul {
@@ -83,6 +85,11 @@
     li a {
       font-size: 14px;
     }
+
+    .important-text {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
   }
 
   /* @media (max-width: 340px) {
@@ -112,11 +119,11 @@
 
   <ul>
     <li class=" bg-gearbox ">
-      Dr. Csordás Ildikó (helyettesíti: Dr. Kenéz Katalin)
+      Dr. Csordás Ildikó
     </li>
     <li>
       <a href="tel:+3635300426" class="btn-contact">
-        recept felírás (35)300-426
+        Vezetékes hívószám: (35)300-426
       </a>
     </li>
     <li>
@@ -130,7 +137,7 @@
     <li class=" bg-gearbox ">Dr. Spruch Rezső</li>
     <li>
       <a href="tel:+3635310493" class="btn-contact">
-        recept felírás (35)310-493
+        Vezetékes hívószám: (35)310-493
       </a>
     </li>
     <li>
@@ -144,7 +151,7 @@
     <li class=" bg-gearbox ">Dr. Kubassek Péter</li>
     <li>
       <a href="tel:+3635300053" class="btn-contact">
-        recept felírás (35)300-053
+        Vezetékes hívószám: (35)300-053
       </a>
     </li>
     <li>
@@ -158,7 +165,7 @@
     <li class=" bg-gearbox ">Dr. Váradi Erzsébet</li>
     <li>
       <a href="tel:+3635301815" class="btn-contact">
-        recept felírás (35)301-815
+        Vezetékes hívószám: (35)301-815
       </a>
     </li>
     <li>
@@ -172,12 +179,12 @@
     <li class=" bg-gearbox ">Dr. Tassi Gábor</li>
     <li>
       <a href="tel:+3635300500" class="btn-contact">
-        recept felírás (35)300-500
+        Vezetékes hívószám: (35)300-500
       </a>
     </li>
     <li>
       <a class="btn-contact" href="tel:+36301451389">
-        koronavírus tünet (30)145-1389
+        Mobil: (30)145-1389
       </a>
     </li>
   </ul>
@@ -186,28 +193,23 @@
     <li class=" bg-gearbox ">Dr. Faragó Gyöngyi</li>
     <li>
       <a href="tel:+3635315752" class="btn-contact">
-        recept felírás (35)315-752
-      </a>
-    </li>
-    <li>
-      <a class="btn-contact" href="tel:+3635315752">
-        koronavírus tünet (35)315-752
+        Vezetékes hívószám: (35)315-752
       </a>
     </li>
   </ul>
 
   <ul>
     <li class=" bg-gearbox ">
-      Dr. Varga Ágnes (helyettesíti: Dr. Tassi Gábor)
+      Dr. Varga Ágnes
     </li>
     <li>
       <a href="tel:+3635300500" class="btn-contact">
-        recept felírás (35)300-500
+        Vezetékes hívószám: (35)300-500
       </a>
     </li>
     <li>
       <a class="btn-contact" href="tel:+36301451389">
-        koronavírus tünet (30)145-1389
+        Mobil: (30)145-1389
       </a>
     </li>
   </ul>

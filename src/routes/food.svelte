@@ -392,7 +392,7 @@
     <br />
     címen vagy kereshetsz a
     <br />
-    <a href="tel:06302224973">06(30)222-4973</a>
+    <a href="tel:067053011303">06(70)530-1130</a>
     <br />
     telefonszámon is.
   </h2>

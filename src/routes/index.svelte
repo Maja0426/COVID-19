@@ -147,7 +147,7 @@
     margin-top: 3em;
   }
 
-  .corona-map {
+  /* .corona-map {
     margin-top: 3em;
     border: 1px solid #ccc;
   }
@@ -155,7 +155,7 @@
   .corona-map img {
     width: 100%;
   }
-
+ */
   .card-wrapper h3 {
     font-size: 2.5em;
   }
@@ -236,7 +236,7 @@
   }
 
   .home {
-    background: #c31f09;
+    background: #2e519d;
     background-image: var(--stripe);
     color: #fff;
     padding: 1em;
@@ -252,6 +252,15 @@
   .donate img {
     margin-top: 2em;
     width: 100%;
+  }
+
+  article img {
+    max-width: 800px;
+  }
+
+  .gif img {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   @media (max-width: 1440px) {
@@ -436,11 +445,11 @@
     </a>
   </h4>
 
-  <div class="corona-map">
+<!--   <div class="corona-map">
     <img
       use:lazy={{ src: 'https://koronavirus.gov.hu/sites/default/files/megye0124.png' }}
       alt="megyénkénti koronavírus statisztika" />
-  </div>
+  </div> -->
 
   <hr />
   <h2 class="first-h2">fertőzés helyzet világszerte</h2>
@@ -484,20 +493,8 @@
   <article class="gif">
     <h2 class="first-h2">Maradj otthon!</h2>
     <img
-      alt="miért maradj otthon animáció"
-      use:lazy={{ src: '.././img/covid-gif.gif' }} />
-    <p>
-      Most a legfontosabb, hogy a vírus terjedését lelassítsuk. Ezért nagyon
-      fontos, hogy aki teheti, maradjon otthon. Ha hirtelen sokan betegednek
-      meg, az túlterheli az egészségügyi ellátó rendszert, és nem tudja
-      kiszolgálni a nagy tömegben jelentkező betegeket. Ez történt
-      olaszországban is, ezt szemlélteti a fenti animáción a kiugró görbe. Ha
-      viszont nem tömegek, hanem viszonylag egyenletes ütemben kisebb létszámú
-      csoportok lesznek betegek (ami elkerülhetetlen) akkor a "kritikus" tömeg
-      mennyisége kezelhető szinten marad, azaz az animáción a szaggatott vonal
-      alatt, ami a rendszer kapacitását szimbolizálja. Fontos hogy ne essünk
-      pánikba, de gondolkozzunk és viselkedjünk felelős állampolgárok módján.
-    </p>
+      alt="szigorítások május 22-ig tájékoztató"
+      use:lazy={{ src: '.././img/covid_0508.jpg' }} />
 
     <h2 class="home">
       Nem csak jogaid, kötelességeid is vannak. Nem csak magadért, a
