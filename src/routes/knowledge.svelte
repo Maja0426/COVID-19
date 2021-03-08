@@ -188,6 +188,7 @@
 
   .tudastar-img img {
     max-width: 600px;
+    height: auto;
   }
 
 
