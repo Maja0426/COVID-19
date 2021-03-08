@@ -74,6 +74,7 @@
       border-radius: 50px;
       box-shadow: 5px 5px 5px #b3b0b0;
       font-weight: bold;
+      max-width: 300px;
     }
 
     li {
